@@ -1,0 +1,469 @@
+{
+  "id": 6842131349783,
+  "admin_graphql_api_id": "gid://shopify/Order/6842131349783",
+  "app_id": 580111,
+  "browser_ip": "2400:adc5:447:b400:852f:6c78:ee96:b472",
+  "buyer_accepts_marketing": true,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": "hWN8hV3c3nVq2cKYPsfS6hKF",
+  "checkout_id": 40454145310999,
+  "checkout_token": "a35c590d7537f6c5ce59098f3d82282b",
+  "client_details": {
+    "accept_language": "en-PK",
+    "browser_height": null,
+    "browser_ip": "2400:adc5:447:b400:852f:6c78:ee96:b472",
+    "browser_width": null,
+    "session_hash": null,
+    "user_agent": "Mozilla/5.0 (Linux; Android 16; SM-A556E Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.49 Mobile Safari/537.36 Instagram 416.0.0.47.66 Android (36/16; 510dpi; 1080x2340; samsung; SM-A556E; a55x; s5e8845; en_GB; 879745420; IABMV/1)"
+  },
+  "closed_at": null,
+  "confirmation_number": "HGLNTY8KM",
+  "confirmed": true,
+  "contact_email": "sabinaali1214@gmail.com",
+  "created_at": "2026-02-12T18:57:52+05:00",
+  "currency": "PKR",
+  "current_subtotal_price": "6700.00",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "6700.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "6700.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "0.00",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "6700.00",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "6700.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "6700.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_tax": "1022.03",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "1022.03",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "1022.03",
+      "currency_code": "PKR"
+    }
+  },
+  "customer_locale": "en-PK",
+  "device_id": null,
+  "discount_codes": [],
+  "duties_included": false,
+  "email": "sabinaali1214@gmail.com",
+  "estimated_taxes": false,
+  "financial_status": "pending",
+  "fulfillment_status": null,
+  "landing_site": "/products/tomas?utm_content=Facebook_UA&utm_source=facebook&variant=48098937372951&media_type=image&utm_medium=paid&utm_id=120241448311940385_v2_s01_e398_i20260212&utm_term=120241448311940385&utm_campaign=120241434851100385&fbclid=PAaWdyZAP6uGdleHRuA2FlbQ",
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_business_entity_id": "MTExMjQ4NDYy",
+  "merchant_of_record_app_id": null,
+  "name": "100085856",
+  "note": null,
+  "note_attributes": [],
+  "number": 84856,
+  "order_number": 85856,
+  "order_status_url": "https://www.julke.pk/11248462/orders/e10a881951aadd7ca79a17c460846b7d/authenticate?key=fb3683b5545a2bb994db822a5904898a",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": [
+    "Cash on Delivery (COD)"
+  ],
+  "phone": null,
+  "po_number": null,
+  "presentment_currency": "PKR",
+  "processed_at": "2026-02-12T18:57:51+05:00",
+  "reference": null,
+  "referring_site": "http://instagram.com/",
+  "source_identifier": null,
+  "source_name": "web",
+  "source_url": null,
+  "subtotal_price": "6700.00",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "6700.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "6700.00",
+      "currency_code": "PKR"
+    }
+  },
+  "tags": "Confimed_By_IVR, Order Created",
+  "tax_exempt": false,
+  "tax_lines": [
+    {
+      "price": "1022.03",
+      "rate": 0.18,
+      "title": "GST",
+      "price_set": {
+        "shop_money": {
+          "amount": "1022.03",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "1022.03",
+          "currency_code": "PKR"
+        }
+      },
+      "channel_liable": false
+    }
+  ],
+  "taxes_included": true,
+  "test": false,
+  "token": "e10a881951aadd7ca79a17c460846b7d",
+  "total_cash_rounding_payment_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_cash_rounding_refund_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_discounts": "0.00",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_line_items_price": "6700.00",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "6700.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "6700.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_outstanding": "6700.00",
+  "total_price": "6700.00",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "6700.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "6700.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tax": "1022.03",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "1022.03",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "1022.03",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 5500,
+  "updated_at": "2026-02-12T18:58:33+05:00",
+  "user_id": null,
+  "billing_address": {
+    "first_name": "Sabina",
+    "address1": "House No.91 B Bor Society Johar Town Lahore",
+    "phone": "03018421117",
+    "city": "Lahore",
+    "zip": "5400",
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Ali",
+    "address2": null,
+    "company": null,
+    "latitude": 31.4744893,
+    "longitude": 74.29788769999999,
+    "name": "Sabina Ali",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "customer": {
+    "id": 8604835741975,
+    "created_at": "2025-04-03T20:07:21+05:00",
+    "updated_at": "2026-02-12T18:57:53+05:00",
+    "first_name": "Sabina",
+    "last_name": "Ali",
+    "state": "disabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "email_marketing_consent": {
+      "state": "subscribed",
+      "opt_in_level": "single_opt_in",
+      "consent_updated_at": "2025-04-03T20:07:22+05:00"
+    },
+    "sms_marketing_consent": null,
+    "tags": "",
+    "email": "sabinaali1214@gmail.com",
+    "phone": null,
+    "currency": "PKR",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/8604835741975",
+    "default_address": {
+      "id": 10746065125655,
+      "customer_id": 8604835741975,
+      "first_name": "Sabina",
+      "last_name": "Ali",
+      "company": null,
+      "address1": "House No.91 B Bor Society Johar Town Lahore",
+      "address2": null,
+      "city": "Lahore",
+      "province": null,
+      "country": "Pakistan",
+      "zip": "5400",
+      "phone": "03018421117",
+      "name": "Sabina Ali",
+      "province_code": null,
+      "country_code": "PK",
+      "country_name": "Pakistan",
+      "default": true
+    }
+  },
+  "discount_applications": [],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 17551325856023,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17551325856023",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 1000,
+      "name": "Fabio - XL / Pale Pink",
+      "price": "2325.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "2325.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "2325.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 8230589464855,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000000873",
+      "taxable": true,
+      "title": "Fabio",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 44868287791383,
+      "variant_inventory_management": "shopify",
+      "variant_title": "XL / Pale Pink",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "354.66",
+          "price_set": {
+            "shop_money": {
+              "amount": "354.66",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "354.66",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    },
+    {
+      "id": 17551325888791,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17551325888791",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 4500,
+      "name": "Daria - Gold Celeste / 38",
+      "price": "4375.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "4375.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "4375.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 8955500724503,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000003028",
+      "taxable": true,
+      "title": "Daria",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 51718202818839,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Gold Celeste / 38",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "667.37",
+          "price_set": {
+            "shop_money": {
+              "amount": "667.37",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "667.37",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    }
+  ],
+  "payment_terms": null,
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Sabina",
+    "address1": "House No.91 B Bor Society Johar Town Lahore",
+    "phone": "03018421117",
+    "city": "Lahore",
+    "zip": "5400",
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Ali",
+    "address2": null,
+    "company": null,
+    "latitude": 31.4744893,
+    "longitude": 74.29788769999999,
+    "name": "Sabina Ali",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "shipping_lines": [
+    {
+      "id": 5395209158935,
+      "carrier_identifier": null,
+      "code": "Free Shipping",
+      "discounted_price": "0.00",
+      "discounted_price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "is_removed": false,
+      "phone": null,
+      "price": "0.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "requested_fulfillment_service_id": null,
+      "source": "shopify",
+      "title": "Free Shipping",
+      "tax_lines": [],
+      "discount_allocations": []
+    }
+  ]
+}

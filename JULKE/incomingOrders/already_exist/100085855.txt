@@ -1,0 +1,535 @@
+{
+  "id": 6842106085655,
+  "admin_graphql_api_id": "gid://shopify/Order/6842106085655",
+  "app_id": 580111,
+  "browser_ip": "154.192.215.26",
+  "buyer_accepts_marketing": true,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": "hWN8hFv58wHJBjjuoIwtXg2t",
+  "checkout_id": 40453853348119,
+  "checkout_token": "d5b9385a5de5b2a87144489cff850970",
+  "client_details": {
+    "accept_language": "en-PK",
+    "browser_height": null,
+    "browser_ip": "154.192.215.26",
+    "browser_width": null,
+    "session_hash": null,
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Mobile/15E148 Safari/604.1"
+  },
+  "closed_at": null,
+  "confirmation_number": "7E7HKY8AW",
+  "confirmed": true,
+  "contact_email": "mahamnaveedkhan1@gmail.com",
+  "created_at": "2026-02-12T18:34:12+05:00",
+  "currency": "PKR",
+  "current_subtotal_price": "36300.00",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "36300.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "36300.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "0.00",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "36300.00",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "36300.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "36300.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_tax": "5537.29",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "5537.29",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "5537.29",
+      "currency_code": "PKR"
+    }
+  },
+  "customer_locale": "en-PK",
+  "device_id": null,
+  "discount_codes": [],
+  "duties_included": false,
+  "email": "mahamnaveedkhan1@gmail.com",
+  "estimated_taxes": false,
+  "financial_status": "pending",
+  "fulfillment_status": null,
+  "landing_site": "/collections/instabadge-best-selling?tw_source=google&tw_adid=&tw_campaign=22170230386&tw_kwdid=&gad_source=1&gad_campaignid=22577741937&gbraid=0AAAAADN_kQIOa6tEgA3REfHaMi8gzDa07",
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_business_entity_id": "MTExMjQ4NDYy",
+  "merchant_of_record_app_id": null,
+  "name": "100085855",
+  "note": "Order confirmed through whatsapp",
+  "note_attributes": [],
+  "number": 84855,
+  "order_number": 85855,
+  "order_status_url": "https://www.julke.pk/11248462/orders/fb8b94cb48d97940e59ca032dc73dca0/authenticate?key=7e3f2c50852cfbece8077fe8c7e44a4d",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": [
+    "Cash on Delivery (COD)"
+  ],
+  "phone": null,
+  "po_number": null,
+  "presentment_currency": "PKR",
+  "processed_at": "2026-02-12T18:34:10+05:00",
+  "reference": null,
+  "referring_site": "https://www.google.com/",
+  "source_identifier": null,
+  "source_name": "web",
+  "source_url": null,
+  "subtotal_price": "36300.00",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "36300.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "36300.00",
+      "currency_code": "PKR"
+    }
+  },
+  "tags": "Confimed_By_IVR, confirmed",
+  "tax_exempt": false,
+  "tax_lines": [
+    {
+      "price": "5537.29",
+      "rate": 0.18,
+      "title": "GST",
+      "price_set": {
+        "shop_money": {
+          "amount": "5537.29",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "5537.29",
+          "currency_code": "PKR"
+        }
+      },
+      "channel_liable": false
+    }
+  ],
+  "taxes_included": true,
+  "test": false,
+  "token": "fb8b94cb48d97940e59ca032dc73dca0",
+  "total_cash_rounding_payment_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_cash_rounding_refund_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_discounts": "0.00",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_line_items_price": "36300.00",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "36300.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "36300.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_outstanding": "36300.00",
+  "total_price": "36300.00",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "36300.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "36300.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tax": "5537.29",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "5537.29",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "5537.29",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 7500,
+  "updated_at": "2026-02-12T18:34:48+05:00",
+  "user_id": null,
+  "billing_address": {
+    "first_name": "Maham",
+    "address1": "House 6 street 12 sector e1 phase 1 hayatabad",
+    "phone": "03175555068",
+    "city": "Peshawar",
+    "zip": "25000",
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Naveed",
+    "address2": null,
+    "company": null,
+    "latitude": 33.9729196,
+    "longitude": 71.4376358,
+    "name": "Maham Naveed",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "customer": {
+    "id": 9308993716503,
+    "created_at": "2026-02-12T16:44:33+05:00",
+    "updated_at": "2026-02-12T18:34:12+05:00",
+    "first_name": "Maham",
+    "last_name": "Naveed",
+    "state": "disabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "email_marketing_consent": {
+      "state": "subscribed",
+      "opt_in_level": "single_opt_in",
+      "consent_updated_at": "2026-02-12T16:44:33+05:00"
+    },
+    "sms_marketing_consent": null,
+    "tags": "",
+    "email": "mahamnaveedkhan1@gmail.com",
+    "phone": null,
+    "currency": "PKR",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/9308993716503",
+    "default_address": {
+      "id": 11347770409239,
+      "customer_id": 9308993716503,
+      "first_name": "Maham",
+      "last_name": "Naveed",
+      "company": null,
+      "address1": "House 6 street 12 sector e1 phase 1 hayatabad",
+      "address2": null,
+      "city": "Peshawar",
+      "province": null,
+      "country": "Pakistan",
+      "zip": "25000",
+      "phone": "03175555068",
+      "name": "Maham Naveed",
+      "province_code": null,
+      "country_code": "PK",
+      "country_name": "Pakistan",
+      "default": true
+    }
+  },
+  "discount_applications": [],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 17551275000087,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17551275000087",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 1500,
+      "name": "Olga - Moroccan Olive / 39",
+      "price": "13900.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "13900.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "13900.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 10104174608663,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000004113",
+      "taxable": true,
+      "title": "Olga",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 51597272776983,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Moroccan Olive / 39",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "2120.34",
+          "price_set": {
+            "shop_money": {
+              "amount": "2120.34",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "2120.34",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    },
+    {
+      "id": 17551275032855,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17551275032855",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 4500,
+      "name": "Tabby - Dark Plum / 40",
+      "price": "9500.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "9500.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "9500.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 9735719092503,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000003365",
+      "taxable": true,
+      "title": "Tabby",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 49823784698135,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Dark Plum / 40",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "1449.15",
+          "price_set": {
+            "shop_money": {
+              "amount": "1449.15",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "1449.15",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    },
+    {
+      "id": 17551275065623,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17551275065623",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 1500,
+      "name": "Loche - Noir / 39",
+      "price": "12900.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "12900.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "12900.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 10071297032471,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000004078",
+      "taxable": true,
+      "title": "Loche",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 51472374006039,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Noir / 39",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "1967.80",
+          "price_set": {
+            "shop_money": {
+              "amount": "1967.80",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "1967.80",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    }
+  ],
+  "payment_terms": null,
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Maham",
+    "address1": "House 6 street 12 sector e1 phase 1 hayatabad",
+    "phone": "03175555068",
+    "city": "Peshawar",
+    "zip": "25000",
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Naveed",
+    "address2": null,
+    "company": null,
+    "latitude": 33.9729196,
+    "longitude": 71.4376358,
+    "name": "Maham Naveed",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "shipping_lines": [
+    {
+      "id": 5395186123031,
+      "carrier_identifier": null,
+      "code": "Free Shipping",
+      "discounted_price": "0.00",
+      "discounted_price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "is_removed": false,
+      "phone": null,
+      "price": "0.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "requested_fulfillment_service_id": null,
+      "source": "shopify",
+      "title": "Free Shipping",
+      "tax_lines": [],
+      "discount_allocations": []
+    }
+  ]
+}

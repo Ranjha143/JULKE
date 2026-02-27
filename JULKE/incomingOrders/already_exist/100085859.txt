@@ -1,0 +1,434 @@
+{
+  "id": 6842347749655,
+  "admin_graphql_api_id": "gid://shopify/Order/6842347749655",
+  "app_id": 580111,
+  "browser_ip": "2401:ba80:a185:52b3:a978:c207:f9ed:cd60",
+  "buyer_accepts_marketing": true,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": "hWN8hlFRFuZa6hlm5TBBZyPD",
+  "checkout_id": 40454532071703,
+  "checkout_token": "b085673338a57a4ef992f2f11a57f4d9",
+  "client_details": {
+    "accept_language": "en-PK",
+    "browser_height": null,
+    "browser_ip": "2401:ba80:a185:52b3:a978:c207:f9ed:cd60",
+    "browser_width": null,
+    "session_hash": null,
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23C71 Instagram 416.0.0.26.68 (iPhone16,2; iOS 26_2_1; en_GB; en-GB; scale=3.00; 1290x2796; IABMV/1; 878272737) Safari/604.1"
+  },
+  "closed_at": null,
+  "confirmation_number": "LH6XYPF9R",
+  "confirmed": true,
+  "contact_email": "mariashah3094@gmail.com",
+  "created_at": "2026-02-12T21:33:00+05:00",
+  "currency": "PKR",
+  "current_subtotal_price": "26505.00",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "26505.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "26505.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "1395.00",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "1395.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "1395.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "26505.00",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "26505.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "26505.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_tax": "4043.14",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "4043.14",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "4043.14",
+      "currency_code": "PKR"
+    }
+  },
+  "customer_locale": "en-PK",
+  "device_id": null,
+  "discount_codes": [
+    {
+      "code": "JULKECREDIT5",
+      "amount": "1395.00",
+      "type": "percentage"
+    }
+  ],
+  "duties_included": false,
+  "email": "mariashah3094@gmail.com",
+  "estimated_taxes": false,
+  "financial_status": "paid",
+  "fulfillment_status": null,
+  "landing_site": "/products/loche",
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_business_entity_id": "MTExMjQ4NDYy",
+  "merchant_of_record_app_id": null,
+  "name": "100085859",
+  "note": "Order confirmed through whatsapp",
+  "note_attributes": [],
+  "number": 84859,
+  "order_number": 85859,
+  "order_status_url": "https://www.julke.pk/11248462/orders/02e1af5726b7e152ea476d6afaf3825e/authenticate?key=743d3b9a267febda8d81fa90156a9166",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": [
+    "UnumPay"
+  ],
+  "phone": null,
+  "po_number": null,
+  "presentment_currency": "PKR",
+  "processed_at": "2026-02-12T21:32:59+05:00",
+  "reference": null,
+  "referring_site": null,
+  "source_identifier": null,
+  "source_name": "web",
+  "source_url": null,
+  "subtotal_price": "26505.00",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "26505.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "26505.00",
+      "currency_code": "PKR"
+    }
+  },
+  "tags": "confirmed",
+  "tax_exempt": false,
+  "tax_lines": [
+    {
+      "price": "4043.14",
+      "rate": 0.18,
+      "title": "GST",
+      "price_set": {
+        "shop_money": {
+          "amount": "4043.14",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "4043.14",
+          "currency_code": "PKR"
+        }
+      },
+      "channel_liable": false
+    }
+  ],
+  "taxes_included": true,
+  "test": false,
+  "token": "02e1af5726b7e152ea476d6afaf3825e",
+  "total_cash_rounding_payment_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_cash_rounding_refund_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_discounts": "1395.00",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "1395.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "1395.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_line_items_price": "27900.00",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "27900.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "27900.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_outstanding": "0.00",
+  "total_price": "26505.00",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "26505.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "26505.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tax": "4043.14",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "4043.14",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "4043.14",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 2000,
+  "updated_at": "2026-02-12T21:42:18+05:00",
+  "user_id": null,
+  "billing_address": {
+    "first_name": "Maria",
+    "address1": "House 1047, Street 45-b, E-11/3",
+    "phone": "03335464446",
+    "city": "Islamabad",
+    "zip": "44000",
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Shah",
+    "address2": "1047-house",
+    "company": null,
+    "latitude": 33.7022972,
+    "longitude": 72.9759119,
+    "name": "Maria Shah",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "customer": {
+    "id": 627356270678,
+    "created_at": "2018-07-09T18:09:01+05:00",
+    "updated_at": "2026-02-12T21:35:04+05:00",
+    "first_name": "Maria",
+    "last_name": "Shah",
+    "state": "disabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "email_marketing_consent": {
+      "state": "subscribed",
+      "opt_in_level": null,
+      "consent_updated_at": "2019-01-02T23:08:15+05:00"
+    },
+    "sms_marketing_consent": null,
+    "tags": "",
+    "email": "mariashah3094@gmail.com",
+    "phone": null,
+    "currency": "PKR",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/627356270678",
+    "default_address": {
+      "id": 11348280017175,
+      "customer_id": 627356270678,
+      "first_name": "Maria",
+      "last_name": "Shah",
+      "company": null,
+      "address1": "House 1047, Street 45-b, E-11/3",
+      "address2": "1047-house",
+      "city": "Islamabad",
+      "province": null,
+      "country": "Pakistan",
+      "zip": "44000",
+      "phone": "03335464446",
+      "name": "Maria Shah",
+      "province_code": null,
+      "country_code": "PK",
+      "country_name": "Pakistan",
+      "default": true
+    }
+  },
+  "discount_applications": [
+    {
+      "target_type": "line_item",
+      "type": "discount_code",
+      "value": "5.0",
+      "value_type": "percentage",
+      "allocation_method": "each",
+      "target_selection": "entitled",
+      "code": "JULKECREDIT5"
+    }
+  ],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 17551745843479,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17551745843479",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 2000,
+      "name": "Houla - Brown Stone",
+      "price": "27900.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "27900.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "27900.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 10109773218071,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000004183",
+      "taxable": true,
+      "title": "Houla",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 51630981677335,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Brown Stone",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "4043.14",
+          "price_set": {
+            "shop_money": {
+              "amount": "4043.14",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "4043.14",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": [
+        {
+          "amount": "1395.00",
+          "amount_set": {
+            "shop_money": {
+              "amount": "1395.00",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "1395.00",
+              "currency_code": "PKR"
+            }
+          },
+          "discount_application_index": 0
+        }
+      ]
+    }
+  ],
+  "payment_terms": null,
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Maria",
+    "address1": "House 1047, Street 45-b, E-11/3",
+    "phone": "03335464446",
+    "city": "Islamabad",
+    "zip": "44000",
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Shah",
+    "address2": "1047-house",
+    "company": null,
+    "latitude": 33.7022972,
+    "longitude": 72.9759119,
+    "name": "Maria Shah",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "shipping_lines": [
+    {
+      "id": 5395362251031,
+      "carrier_identifier": null,
+      "code": "Free Shipping",
+      "discounted_price": "0.00",
+      "discounted_price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "is_removed": false,
+      "phone": null,
+      "price": "0.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "requested_fulfillment_service_id": null,
+      "source": "shopify",
+      "title": "Free Shipping",
+      "tax_lines": [],
+      "discount_allocations": []
+    }
+  ]
+}

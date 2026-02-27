@@ -1,0 +1,403 @@
+{
+  "id": 6841958498583,
+  "admin_graphql_api_id": "gid://shopify/Order/6841958498583",
+  "app_id": 580111,
+  "browser_ip": "154.192.139.3",
+  "buyer_accepts_marketing": true,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": "hWN8gw9N2GI5CR0JvpF8qGAN",
+  "checkout_id": 40453735186711,
+  "checkout_token": "1f60a4b637e9b0e2c4c1c29757b4787b",
+  "client_details": {
+    "accept_language": "en-PK",
+    "browser_height": null,
+    "browser_ip": "154.192.139.3",
+    "browser_width": null,
+    "session_hash": null,
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1"
+  },
+  "closed_at": null,
+  "confirmation_number": "GL5CH5VZW",
+  "confirmed": true,
+  "contact_email": "ibrahimkhan1029@icloud.com",
+  "created_at": "2026-02-12T15:43:25+05:00",
+  "currency": "PKR",
+  "current_subtotal_price": "19500.00",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "19500.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "19500.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "0.00",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "19500.00",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "19500.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "19500.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_tax": "2974.58",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "2974.58",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "2974.58",
+      "currency_code": "PKR"
+    }
+  },
+  "customer_locale": "en-PK",
+  "device_id": null,
+  "discount_codes": [],
+  "duties_included": false,
+  "email": "ibrahimkhan1029@icloud.com",
+  "estimated_taxes": false,
+  "financial_status": "pending",
+  "fulfillment_status": null,
+  "landing_site": "/collections/men-shoes?tw_source=google&tw_adid=&tw_campaign=22170230386&tw_kwdid=&gad_source=1&gad_campaignid=22577741937&gbraid=0AAAAADN_kQLEzvwC3jNfSxqJScm7iuo6N&gclid=Cj0KCQiA7rDMBhCjARIsAGDBuECI7w65Zm4ffa1-wD2Nhc6GTJ1i4R7jGPMixwMY0y_9trInBU9FIRoaAgew",
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_business_entity_id": "MTExMjQ4NDYy",
+  "merchant_of_record_app_id": null,
+  "name": "100085853",
+  "note": "Order confirmed through whatsapp",
+  "note_attributes": [],
+  "number": 84853,
+  "order_number": 85853,
+  "order_status_url": "https://www.julke.pk/11248462/orders/5dc18a58e5297b84b64a3a2609ca3deb/authenticate?key=adabc878d0b7b38098bb24b8d3971014",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": [
+    "Cash on Delivery (COD)"
+  ],
+  "phone": null,
+  "po_number": null,
+  "presentment_currency": "PKR",
+  "processed_at": "2026-02-12T15:43:21+05:00",
+  "reference": null,
+  "referring_site": "https://www.google.com/",
+  "source_identifier": null,
+  "source_name": "web",
+  "source_url": null,
+  "subtotal_price": "19500.00",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "19500.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "19500.00",
+      "currency_code": "PKR"
+    }
+  },
+  "tags": "confirmed",
+  "tax_exempt": false,
+  "tax_lines": [
+    {
+      "price": "2974.58",
+      "rate": 0.18,
+      "title": "GST",
+      "price_set": {
+        "shop_money": {
+          "amount": "2974.58",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "2974.58",
+          "currency_code": "PKR"
+        }
+      },
+      "channel_liable": false
+    }
+  ],
+  "taxes_included": true,
+  "test": false,
+  "token": "5dc18a58e5297b84b64a3a2609ca3deb",
+  "total_cash_rounding_payment_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_cash_rounding_refund_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_discounts": "0.00",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_line_items_price": "19500.00",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "19500.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "19500.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_outstanding": "19500.00",
+  "total_price": "19500.00",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "19500.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "19500.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tax": "2974.58",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "2974.58",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "2974.58",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 2000,
+  "updated_at": "2026-02-13T00:00:43+05:00",
+  "user_id": null,
+  "billing_address": {
+    "first_name": "Ibrahim",
+    "address1": "B.block house no 1028",
+    "phone": "03110565496",
+    "city": "Satellite Town Rawalpindi",
+    "zip": null,
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Khan",
+    "address2": null,
+    "company": null,
+    "latitude": 33.6412348,
+    "longitude": 73.0634749,
+    "name": "Ibrahim Khan",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "customer": {
+    "id": 9308918284567,
+    "created_at": "2026-02-12T15:43:22+05:00",
+    "updated_at": "2026-02-12T15:43:26+05:00",
+    "first_name": "Ibrahim",
+    "last_name": "Khan",
+    "state": "disabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "email_marketing_consent": {
+      "state": "subscribed",
+      "opt_in_level": "single_opt_in",
+      "consent_updated_at": "2026-02-12T15:43:26+05:00"
+    },
+    "sms_marketing_consent": null,
+    "tags": "",
+    "email": "ibrahimkhan1029@icloud.com",
+    "phone": null,
+    "currency": "PKR",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/9308918284567",
+    "default_address": {
+      "id": 11347674923287,
+      "customer_id": 9308918284567,
+      "first_name": "Ibrahim",
+      "last_name": "Khan",
+      "company": null,
+      "address1": "B.block house no 1028",
+      "address2": null,
+      "city": "Satellite Town Rawalpindi",
+      "province": null,
+      "country": "Pakistan",
+      "zip": null,
+      "phone": "03110565496",
+      "name": "Ibrahim Khan",
+      "province_code": null,
+      "country_code": "PK",
+      "country_name": "Pakistan",
+      "default": true
+    }
+  },
+  "discount_applications": [],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 17550945222935,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17550945222935",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 2000,
+      "name": "Rook - Black / 39",
+      "price": "19500.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "19500.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "19500.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 10122899095831,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000004208",
+      "taxable": true,
+      "title": "Rook",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 51702577922327,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Black / 39",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "2974.58",
+          "price_set": {
+            "shop_money": {
+              "amount": "2974.58",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "2974.58",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    }
+  ],
+  "payment_terms": null,
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Ibrahim",
+    "address1": "B.block house no 1028",
+    "phone": "03110565496",
+    "city": "Satellite Town Rawalpindi",
+    "zip": null,
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Khan",
+    "address2": null,
+    "company": null,
+    "latitude": 33.6412348,
+    "longitude": 73.0634749,
+    "name": "Ibrahim Khan",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "shipping_lines": [
+    {
+      "id": 5395046596887,
+      "carrier_identifier": null,
+      "code": "Free Shipping",
+      "discounted_price": "0.00",
+      "discounted_price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "is_removed": false,
+      "phone": null,
+      "price": "0.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "requested_fulfillment_service_id": null,
+      "source": "shopify",
+      "title": "Free Shipping",
+      "tax_lines": [],
+      "discount_allocations": []
+    }
+  ]
+}

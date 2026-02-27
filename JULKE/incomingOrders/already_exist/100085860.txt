@@ -1,0 +1,403 @@
+{
+  "id": 6842353156375,
+  "admin_graphql_api_id": "gid://shopify/Order/6842353156375",
+  "app_id": 580111,
+  "browser_ip": "39.49.238.98",
+  "buyer_accepts_marketing": false,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": "hWN8hlz2Gk5tmik4iyPQ4bjg",
+  "checkout_id": 40454552813847,
+  "checkout_token": "e4e64217442661ae6a414a97527982f6",
+  "client_details": {
+    "accept_language": "en-PK",
+    "browser_height": null,
+    "browser_ip": "39.49.238.98",
+    "browser_width": null,
+    "session_hash": null,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+  },
+  "closed_at": null,
+  "confirmation_number": "YU5MEC0DH",
+  "confirmed": true,
+  "contact_email": "ammar.shah.as@gmail.com",
+  "created_at": "2026-02-12T21:37:29+05:00",
+  "currency": "PKR",
+  "current_subtotal_price": "15200.00",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "15200.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "15200.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "0.00",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "15200.00",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "15200.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "15200.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_tax": "2318.64",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "2318.64",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "2318.64",
+      "currency_code": "PKR"
+    }
+  },
+  "customer_locale": "en-PK",
+  "device_id": null,
+  "discount_codes": [],
+  "duties_included": false,
+  "email": "ammar.shah.as@gmail.com",
+  "estimated_taxes": false,
+  "financial_status": "paid",
+  "fulfillment_status": null,
+  "landing_site": "/collections/instabadge-best-selling?tw_source=google&tw_adid=&tw_campaign=22170230386&tw_kwdid=&gad_source=1&gad_campaignid=22577741937&gbraid=0AAAAADN_kQIwtswuvtCYi67Rz7-eBLQwj&gclid=CjwKCAiAkbbMBhB2EiwANbxtbWtANedv3qcRHQloqgo5JbBUfjnFTmZyDAUlKbjsLWaKzY",
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_business_entity_id": "MTExMjQ4NDYy",
+  "merchant_of_record_app_id": null,
+  "name": "100085860",
+  "note": "Order confirmed through whatsapp",
+  "note_attributes": [],
+  "number": 84860,
+  "order_number": 85860,
+  "order_status_url": "https://www.julke.pk/11248462/orders/0625a3c200c0f7413d9dc539519b0196/authenticate?key=a8b3140770319ff73f34179ecd1a13e4",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": [
+    "UnumPay"
+  ],
+  "phone": null,
+  "po_number": null,
+  "presentment_currency": "PKR",
+  "processed_at": "2026-02-12T21:37:25+05:00",
+  "reference": null,
+  "referring_site": "https://www.google.com/",
+  "source_identifier": null,
+  "source_name": "web",
+  "source_url": null,
+  "subtotal_price": "15200.00",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "15200.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "15200.00",
+      "currency_code": "PKR"
+    }
+  },
+  "tags": "confirmed",
+  "tax_exempt": false,
+  "tax_lines": [
+    {
+      "price": "2318.64",
+      "rate": 0.18,
+      "title": "GST",
+      "price_set": {
+        "shop_money": {
+          "amount": "2318.64",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "2318.64",
+          "currency_code": "PKR"
+        }
+      },
+      "channel_liable": false
+    }
+  ],
+  "taxes_included": true,
+  "test": false,
+  "token": "0625a3c200c0f7413d9dc539519b0196",
+  "total_cash_rounding_payment_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_cash_rounding_refund_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_discounts": "0.00",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_line_items_price": "15200.00",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "15200.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "15200.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_outstanding": "0.00",
+  "total_price": "15200.00",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "15200.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "15200.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tax": "2318.64",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "2318.64",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "2318.64",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 10000,
+  "updated_at": "2026-02-12T21:38:57+05:00",
+  "user_id": null,
+  "billing_address": {
+    "first_name": "Ammar",
+    "address1": "House 1158, Street 25, Phase 5, Bahria Town",
+    "phone": "03335630904",
+    "city": "Rawalpindi",
+    "zip": null,
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Syed",
+    "address2": null,
+    "company": null,
+    "latitude": 33.5582358,
+    "longitude": 73.134298,
+    "name": "Ammar Syed",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "customer": {
+    "id": 9309318775063,
+    "created_at": "2026-02-12T20:42:55+05:00",
+    "updated_at": "2026-02-12T21:37:30+05:00",
+    "first_name": "Ammar",
+    "last_name": "Syed",
+    "state": "disabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "email_marketing_consent": {
+      "state": "not_subscribed",
+      "opt_in_level": "single_opt_in",
+      "consent_updated_at": null
+    },
+    "sms_marketing_consent": null,
+    "tags": "",
+    "email": "ammar.shah.as@gmail.com",
+    "phone": null,
+    "currency": "PKR",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/9309318775063",
+    "default_address": {
+      "id": 11348288635159,
+      "customer_id": 9309318775063,
+      "first_name": "Ammar",
+      "last_name": "Syed",
+      "company": null,
+      "address1": "House 1158, Street 25, Phase 5, Bahria Town",
+      "address2": null,
+      "city": "Rawalpindi",
+      "province": null,
+      "country": "Pakistan",
+      "zip": null,
+      "phone": "03335630904",
+      "name": "Ammar Syed",
+      "province_code": null,
+      "country_code": "PK",
+      "country_name": "Pakistan",
+      "default": true
+    }
+  },
+  "discount_applications": [],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 17551757181207,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17551757181207",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 10000,
+      "name": "Atom - Black",
+      "price": "15200.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "15200.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "15200.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 8635347861783,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000000119",
+      "taxable": true,
+      "title": "Atom",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 46667467030807,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Black",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "2318.64",
+          "price_set": {
+            "shop_money": {
+              "amount": "2318.64",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "2318.64",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    }
+  ],
+  "payment_terms": null,
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Ammar",
+    "address1": "House 1158, Street 25, Phase 5, Bahria Town",
+    "phone": "03335630904",
+    "city": "Rawalpindi",
+    "zip": null,
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Syed",
+    "address2": null,
+    "company": null,
+    "latitude": 33.5582358,
+    "longitude": 73.134298,
+    "name": "Ammar Syed",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "shipping_lines": [
+    {
+      "id": 5395366773015,
+      "carrier_identifier": null,
+      "code": "Free Shipping",
+      "discounted_price": "0.00",
+      "discounted_price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "is_removed": false,
+      "phone": null,
+      "price": "0.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "requested_fulfillment_service_id": null,
+      "source": "shopify",
+      "title": "Free Shipping",
+      "tax_lines": [],
+      "discount_allocations": []
+    }
+  ]
+}

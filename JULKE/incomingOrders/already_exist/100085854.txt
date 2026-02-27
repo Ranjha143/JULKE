@@ -1,0 +1,469 @@
+{
+  "id": 6842095567127,
+  "admin_graphql_api_id": "gid://shopify/Order/6842095567127",
+  "app_id": 580111,
+  "browser_ip": "39.50.129.118",
+  "buyer_accepts_marketing": true,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": "hWN8hS8Zb6QfbP7dlFDAHYaC",
+  "checkout_id": 40454095175959,
+  "checkout_token": "9b54ba07c94ccbdd8bb2eccd6e281f8f",
+  "client_details": {
+    "accept_language": "en-PK",
+    "browser_height": null,
+    "browser_ip": "39.50.129.118",
+    "browser_width": null,
+    "session_hash": null,
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/29.0 Chrome/136.0.0.0 Mobile Safari/537.36"
+  },
+  "closed_at": null,
+  "confirmation_number": "CA0IIUGFY",
+  "confirmed": true,
+  "contact_email": "aineequrratulain9@gmail.com",
+  "created_at": "2026-02-12T18:24:01+05:00",
+  "currency": "PKR",
+  "current_subtotal_price": "8300.00",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "8300.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "8300.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "0.00",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "8300.00",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "8300.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "8300.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_tax": "1266.10",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "1266.10",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "1266.10",
+      "currency_code": "PKR"
+    }
+  },
+  "customer_locale": "en-PK",
+  "device_id": null,
+  "discount_codes": [],
+  "duties_included": false,
+  "email": "aineequrratulain9@gmail.com",
+  "estimated_taxes": false,
+  "financial_status": "pending",
+  "fulfillment_status": null,
+  "landing_site": "/?tw_source=google&tw_adid=&tw_campaign=22170230386&tw_kwdid=&gad_source=1&gad_campaignid=22577741937&gclid=EAIaIQobChMIqrb_xILUkgMVPjwGAB0Qpx8kEAAYAiAAEgLip_D_BwE",
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_business_entity_id": "MTExMjQ4NDYy",
+  "merchant_of_record_app_id": null,
+  "name": "100085854",
+  "note": "Order confirmed through whatsapp",
+  "note_attributes": [],
+  "number": 84854,
+  "order_number": 85854,
+  "order_status_url": "https://www.julke.pk/11248462/orders/15a61b2ce5d3cb72288fe963ef56d64c/authenticate?key=1baaf53ed40ad36a972755161f0c3ec2",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": [
+    "Cash on Delivery (COD)"
+  ],
+  "phone": null,
+  "po_number": null,
+  "presentment_currency": "PKR",
+  "processed_at": "2026-02-12T18:23:58+05:00",
+  "reference": null,
+  "referring_site": "https://www.google.com/",
+  "source_identifier": null,
+  "source_name": "web",
+  "source_url": null,
+  "subtotal_price": "8300.00",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "8300.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "8300.00",
+      "currency_code": "PKR"
+    }
+  },
+  "tags": "confirmed",
+  "tax_exempt": false,
+  "tax_lines": [
+    {
+      "price": "1266.10",
+      "rate": 0.18,
+      "title": "GST",
+      "price_set": {
+        "shop_money": {
+          "amount": "1266.10",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "1266.10",
+          "currency_code": "PKR"
+        }
+      },
+      "channel_liable": false
+    }
+  ],
+  "taxes_included": true,
+  "test": false,
+  "token": "15a61b2ce5d3cb72288fe963ef56d64c",
+  "total_cash_rounding_payment_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_cash_rounding_refund_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_discounts": "0.00",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_line_items_price": "8300.00",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "8300.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "8300.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_outstanding": "8300.00",
+  "total_price": "8300.00",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "8300.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "8300.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tax": "1266.10",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "1266.10",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "1266.10",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 1500,
+  "updated_at": "2026-02-13T04:52:25+05:00",
+  "user_id": null,
+  "billing_address": {
+    "first_name": "Ainne",
+    "address1": "Alquraish phase no1 Street no12 House no310",
+    "phone": "03151603312",
+    "city": "MULTAN",
+    "zip": "66000",
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Qurratulain",
+    "address2": "Sher shah road",
+    "company": null,
+    "latitude": 30.1983312,
+    "longitude": 71.51842959999999,
+    "name": "Ainne Qurratulain",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "customer": {
+    "id": 9309148971287,
+    "created_at": "2026-02-12T18:23:58+05:00",
+    "updated_at": "2026-02-12T18:24:02+05:00",
+    "first_name": "Ainne",
+    "last_name": "Qurratulain",
+    "state": "disabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "email_marketing_consent": {
+      "state": "subscribed",
+      "opt_in_level": "single_opt_in",
+      "consent_updated_at": "2026-02-12T18:24:02+05:00"
+    },
+    "sms_marketing_consent": null,
+    "tags": "",
+    "email": "aineequrratulain9@gmail.com",
+    "phone": null,
+    "currency": "PKR",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/9309148971287",
+    "default_address": {
+      "id": 11347926450455,
+      "customer_id": 9309148971287,
+      "first_name": "Ainne",
+      "last_name": "Qurratulain",
+      "company": null,
+      "address1": "Alquraish phase no1 Street no12 House no310",
+      "address2": "Sher shah road",
+      "city": "MULTAN",
+      "province": null,
+      "country": "Pakistan",
+      "zip": "66000",
+      "phone": "03151603312",
+      "name": "Ainne Qurratulain",
+      "province_code": null,
+      "country_code": "PK",
+      "country_name": "Pakistan",
+      "default": true
+    }
+  },
+  "discount_applications": [],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 17551251702039,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17551251702039",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 1500,
+      "name": "Raptor - Clay",
+      "price": "3800.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "3800.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "3800.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 4864791838806,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000001998",
+      "taxable": true,
+      "title": "Raptor",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 33194077225046,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Clay",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "579.66",
+          "price_set": {
+            "shop_money": {
+              "amount": "579.66",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "579.66",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    },
+    {
+      "id": 17551251734807,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17551251734807",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 0,
+      "name": "Vince - Dark Brown",
+      "price": "4500.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "4500.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "4500.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 8451868328215,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000002622",
+      "taxable": true,
+      "title": "Vince",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 45706264740119,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Dark Brown",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "686.44",
+          "price_set": {
+            "shop_money": {
+              "amount": "686.44",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "686.44",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    }
+  ],
+  "payment_terms": null,
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Ainne",
+    "address1": "Alquraish phase no1 Street no12 House no310",
+    "phone": "03151603312",
+    "city": "MULTAN",
+    "zip": "66000",
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Qurratulain",
+    "address2": "Sher shah road",
+    "company": null,
+    "latitude": 30.1983312,
+    "longitude": 71.51842959999999,
+    "name": "Ainne Qurratulain",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "shipping_lines": [
+    {
+      "id": 5395176456471,
+      "carrier_identifier": null,
+      "code": "Free Shipping",
+      "discounted_price": "0.00",
+      "discounted_price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "is_removed": false,
+      "phone": null,
+      "price": "0.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "requested_fulfillment_service_id": null,
+      "source": "shopify",
+      "title": "Free Shipping",
+      "tax_lines": [],
+      "discount_allocations": []
+    }
+  ]
+}

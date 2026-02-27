@@ -1,0 +1,403 @@
+{
+  "id": 6842139607319,
+  "admin_graphql_api_id": "gid://shopify/Order/6842139607319",
+  "app_id": 580111,
+  "browser_ip": "154.80.58.46",
+  "buyer_accepts_marketing": true,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": "hWN8hWtCBHnePklWuyrvCQXD",
+  "checkout_id": 40454195544343,
+  "checkout_token": "288b7c80965a3494c509851bfcfe8033",
+  "client_details": {
+    "accept_language": "en-PK",
+    "browser_height": null,
+    "browser_ip": "154.80.58.46",
+    "browser_width": null,
+    "session_hash": null,
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Mobile/15E148 Safari/604.1"
+  },
+  "closed_at": null,
+  "confirmation_number": "0G51JYI0J",
+  "confirmed": true,
+  "contact_email": "somiawaseem5@gmail.com",
+  "created_at": "2026-02-12T19:05:38+05:00",
+  "currency": "PKR",
+  "current_subtotal_price": "23500.00",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "23500.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "23500.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "0.00",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "23500.00",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "23500.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "23500.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_tax": "3584.75",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "3584.75",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "3584.75",
+      "currency_code": "PKR"
+    }
+  },
+  "customer_locale": "en-PK",
+  "device_id": null,
+  "discount_codes": [],
+  "duties_included": false,
+  "email": "somiawaseem5@gmail.com",
+  "estimated_taxes": false,
+  "financial_status": "pending",
+  "fulfillment_status": null,
+  "landing_site": "/checkouts/sessions/clone?_r=AQABLI8TxTQc73v2MxhZ737oCRcAWW5nzTFiGT0vUcWq&locale=en-PK&source_type=cn&source_id=hWN8hWlUPPPe4MLLmaibQdtL&skip_fade_in=true&checkout_url=/checkouts/cn/hWN8hWlUPPPe4MLLmaibQdtL/en-pk/processing?_r=AQABLI8TxTQc73v2MxhZ737oCRcA",
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_business_entity_id": "MTExMjQ4NDYy",
+  "merchant_of_record_app_id": null,
+  "name": "100085857",
+  "note": "Order confirmed through whatsapp",
+  "note_attributes": [],
+  "number": 84857,
+  "order_number": 85857,
+  "order_status_url": "https://www.julke.pk/11248462/orders/aa383d6fd02875c74a012ebd16b959f5/authenticate?key=cc521fe74b5d64f7657478cf48502357",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": [
+    "Cash on Delivery (COD)"
+  ],
+  "phone": null,
+  "po_number": null,
+  "presentment_currency": "PKR",
+  "processed_at": "2026-02-12T19:05:34+05:00",
+  "reference": null,
+  "referring_site": "https://www.julke.pk/checkouts/cn/hWN8hWlUPPPe4MLLmaibQdtL/en-pk/processing?_r=AQABLI8TxTQc73v2MxhZ737oCRcAWW5nzTFiGT0vUcWq",
+  "source_identifier": null,
+  "source_name": "web",
+  "source_url": null,
+  "subtotal_price": "23500.00",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "23500.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "23500.00",
+      "currency_code": "PKR"
+    }
+  },
+  "tags": "confirmed",
+  "tax_exempt": false,
+  "tax_lines": [
+    {
+      "price": "3584.75",
+      "rate": 0.18,
+      "title": "GST",
+      "price_set": {
+        "shop_money": {
+          "amount": "3584.75",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "3584.75",
+          "currency_code": "PKR"
+        }
+      },
+      "channel_liable": false
+    }
+  ],
+  "taxes_included": true,
+  "test": false,
+  "token": "aa383d6fd02875c74a012ebd16b959f5",
+  "total_cash_rounding_payment_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_cash_rounding_refund_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_discounts": "0.00",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_line_items_price": "23500.00",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "23500.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "23500.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_outstanding": "23500.00",
+  "total_price": "23500.00",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "23500.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "23500.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tax": "3584.75",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "3584.75",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "3584.75",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 6500,
+  "updated_at": "2026-02-12T19:08:54+05:00",
+  "user_id": null,
+  "billing_address": {
+    "first_name": "Somia",
+    "address1": "190C Eithad town Phase 1",
+    "phone": "03208440433",
+    "city": "lahore",
+    "zip": null,
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Waseem",
+    "address2": "ACME ONE",
+    "company": null,
+    "latitude": 31.4475894,
+    "longitude": 74.2321285,
+    "name": "Somia Waseem",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "customer": {
+    "id": 9309195763991,
+    "created_at": "2026-02-12T19:03:36+05:00",
+    "updated_at": "2026-02-12T19:14:01+05:00",
+    "first_name": "Somia",
+    "last_name": "Waseem",
+    "state": "disabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "email_marketing_consent": {
+      "state": "subscribed",
+      "opt_in_level": "single_opt_in",
+      "consent_updated_at": "2026-02-12T19:05:39+05:00"
+    },
+    "sms_marketing_consent": null,
+    "tags": "",
+    "email": "somiawaseem5@gmail.com",
+    "phone": null,
+    "currency": "PKR",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/9309195763991",
+    "default_address": {
+      "id": 11348004765975,
+      "customer_id": 9309195763991,
+      "first_name": "Somia",
+      "last_name": "Waseem",
+      "company": null,
+      "address1": "190C Eithad town Phase 1",
+      "address2": "ACME ONE",
+      "city": "lahore",
+      "province": null,
+      "country": "Pakistan",
+      "zip": null,
+      "phone": "03208440433",
+      "name": "Somia Waseem",
+      "province_code": null,
+      "country_code": "PK",
+      "country_name": "Pakistan",
+      "default": true
+    }
+  },
+  "discount_applications": [],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 17551341191447,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17551341191447",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 6500,
+      "name": "Hutton - Croco Black",
+      "price": "23500.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "23500.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "23500.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 8532068598039,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000003271",
+      "taxable": true,
+      "title": "Hutton",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 49554528043287,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Croco Black",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "3584.75",
+          "price_set": {
+            "shop_money": {
+              "amount": "3584.75",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "3584.75",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    }
+  ],
+  "payment_terms": null,
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Somia",
+    "address1": "190C Eithad town Phase 1",
+    "phone": "03208440433",
+    "city": "lahore",
+    "zip": null,
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Waseem",
+    "address2": "ACME ONE",
+    "company": null,
+    "latitude": 31.4475894,
+    "longitude": 74.2321285,
+    "name": "Somia Waseem",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "shipping_lines": [
+    {
+      "id": 5395216826647,
+      "carrier_identifier": null,
+      "code": "Free Shipping",
+      "discounted_price": "0.00",
+      "discounted_price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "is_removed": false,
+      "phone": null,
+      "price": "0.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "requested_fulfillment_service_id": null,
+      "source": "shopify",
+      "title": "Free Shipping",
+      "tax_lines": [],
+      "discount_allocations": []
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "id": 6842697187607,
+  "admin_graphql_api_id": "gid://shopify/Order/6842697187607",
+  "app_id": 580111,
+  "browser_ip": "2001:df1:4540:8c61:f98a:e139:9c18:4623",
+  "buyer_accepts_marketing": true,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": "hWN8iFmT55cV9ht7XlnFOmjD",
+  "checkout_id": 40455304347927,
+  "checkout_token": "7a70609665b44c3651f7e9535b6b380f",
+  "client_details": {
+    "accept_language": "en-PK",
+    "browser_height": null,
+    "browser_ip": "2001:df1:4540:8c61:f98a:e139:9c18:4623",
+    "browser_width": null,
+    "session_hash": null,
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Mobile/15E148 Safari/604.1"
+  },
+  "closed_at": null,
+  "confirmation_number": "N13YX0K0V",
+  "confirmed": true,
+  "contact_email": "am620189@gmail.com",
+  "created_at": "2026-02-13T02:35:14+05:00",
+  "currency": "PKR",
+  "current_subtotal_price": "23630.00",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "23630.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "23630.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "0.00",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "23630.00",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "23630.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "23630.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_tax": "4066.34",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "4066.34",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "4066.34",
+      "currency_code": "PKR"
+    }
+  },
+  "customer_locale": "en-PK",
+  "device_id": null,
+  "discount_codes": [],
+  "duties_included": false,
+  "email": "am620189@gmail.com",
+  "estimated_taxes": false,
+  "financial_status": "pending",
+  "fulfillment_status": null,
+  "landing_site": "/?tw_source=google&tw_adid=&tw_campaign=22170230386&tw_kwdid=&gad_source=1&gad_campaignid=22577741937&gbraid=0AAAAADN_kQIOa6tEgA3REfHaMi8gzDa07&gclid=EAIaIQobChMIyo6PgPHUkgMVJIuDBx1KlQBPEAAYAiAAEgJDcfD_BwE",
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_business_entity_id": "MTExMjQ4NDYy",
+  "merchant_of_record_app_id": null,
+  "name": "100085864",
+  "note": null,
+  "note_attributes": [],
+  "number": 84864,
+  "order_number": 85864,
+  "order_status_url": "https://www.julke.pk/11248462/orders/4adcf35658116db9abeecdec9897c1a4/authenticate?key=16600d2520079a4967f648b47f9d4971",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": [
+    "Cash on Delivery (COD)"
+  ],
+  "phone": null,
+  "po_number": null,
+  "presentment_currency": "PKR",
+  "processed_at": "2026-02-13T02:35:12+05:00",
+  "reference": null,
+  "referring_site": "https://www.google.com/",
+  "source_identifier": null,
+  "source_name": "web",
+  "source_url": null,
+  "subtotal_price": "23630.00",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "23630.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "23630.00",
+      "currency_code": "PKR"
+    }
+  },
+  "tags": "Order Created",
+  "tax_exempt": false,
+  "tax_lines": [
+    {
+      "price": "2120.34",
+      "rate": 0.18,
+      "title": "GST",
+      "price_set": {
+        "shop_money": {
+          "amount": "2120.34",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "2120.34",
+          "currency_code": "PKR"
+        }
+      },
+      "channel_liable": false
+    },
+    {
+      "price": "1946.00",
+      "rate": 0.25,
+      "title": "GST",
+      "price_set": {
+        "shop_money": {
+          "amount": "1946.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "1946.00",
+          "currency_code": "PKR"
+        }
+      },
+      "channel_liable": false
+    }
+  ],
+  "taxes_included": true,
+  "test": false,
+  "token": "4adcf35658116db9abeecdec9897c1a4",
+  "total_cash_rounding_payment_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_cash_rounding_refund_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_discounts": "0.00",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_line_items_price": "23630.00",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "23630.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "23630.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_outstanding": "23630.00",
+  "total_price": "23630.00",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "23630.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "23630.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tax": "4066.34",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "4066.34",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "4066.34",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 6000,
+  "updated_at": "2026-02-13T02:35:24+05:00",
+  "user_id": null,
+  "billing_address": {
+    "first_name": "Ahmad",
+    "address1": "Village Rehmania Tehsil & District Gujrat",
+    "phone": "03420656647",
+    "city": "Gujrat",
+    "zip": null,
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Mohammad",
+    "address2": "House Number 3",
+    "company": null,
+    "latitude": 32.5963528,
+    "longitude": 74.0410284,
+    "name": "Ahmad Mohammad",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "customer": {
+    "id": 9309741973783,
+    "created_at": "2026-02-13T02:35:13+05:00",
+    "updated_at": "2026-02-13T02:35:15+05:00",
+    "first_name": "Ahmad",
+    "last_name": "Mohammad",
+    "state": "disabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "email_marketing_consent": {
+      "state": "subscribed",
+      "opt_in_level": "single_opt_in",
+      "consent_updated_at": "2026-02-13T02:35:15+05:00"
+    },
+    "sms_marketing_consent": null,
+    "tags": "",
+    "email": "am620189@gmail.com",
+    "phone": null,
+    "currency": "PKR",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/9309741973783",
+    "default_address": {
+      "id": 11348823376151,
+      "customer_id": 9309741973783,
+      "first_name": "Ahmad",
+      "last_name": "Mohammad",
+      "company": null,
+      "address1": "Village Rehmania Tehsil & District Gujrat",
+      "address2": "House Number 3",
+      "city": "Gujrat",
+      "province": null,
+      "country": "Pakistan",
+      "zip": null,
+      "phone": "03420656647",
+      "name": "Ahmad Mohammad",
+      "province_code": null,
+      "country_code": "PK",
+      "country_name": "Pakistan",
+      "default": true
+    }
+  },
+  "discount_applications": [],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 17552483221783,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17552483221783",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 1500,
+      "name": "Pemberley - Cocoa / 42",
+      "price": "13900.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "13900.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "13900.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 10071352508695,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000004095",
+      "taxable": true,
+      "title": "Pemberley",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 51466321658135,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Cocoa / 42",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "2120.34",
+          "price_set": {
+            "shop_money": {
+              "amount": "2120.34",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "2120.34",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    },
+    {
+      "id": 17552483254551,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17552483254551",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 4500,
+      "name": "Laurie - Dark Vanilla / 42",
+      "price": "9730.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "9730.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "9730.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 9053904601367,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000002684",
+      "taxable": true,
+      "title": "Laurie",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 47992638177559,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Dark Vanilla / 42",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "1946.00",
+          "price_set": {
+            "shop_money": {
+              "amount": "1946.00",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "1946.00",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.25,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    }
+  ],
+  "payment_terms": null,
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Ahmad",
+    "address1": "Village Rehmania Tehsil & District Gujrat",
+    "phone": "03420656647",
+    "city": "Gujrat",
+    "zip": null,
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Mohammad",
+    "address2": "House Number 3",
+    "company": null,
+    "latitude": 32.5963528,
+    "longitude": 74.0410284,
+    "name": "Ahmad Mohammad",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "shipping_lines": [
+    {
+      "id": 5395612696855,
+      "carrier_identifier": null,
+      "code": "Free Shipping",
+      "discounted_price": "0.00",
+      "discounted_price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "is_removed": false,
+      "phone": null,
+      "price": "0.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "requested_fulfillment_service_id": null,
+      "source": "shopify",
+      "title": "Free Shipping",
+      "tax_lines": [],
+      "discount_allocations": []
+    }
+  ]
+}

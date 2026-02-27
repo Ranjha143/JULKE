@@ -1,0 +1,403 @@
+{
+  "id": 6842321338647,
+  "admin_graphql_api_id": "gid://shopify/Order/6842321338647",
+  "app_id": 580111,
+  "browser_ip": "2400:adc1:143:d900:1dda:2c7a:fa29:2496",
+  "buyer_accepts_marketing": true,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": "hWN8hjWpbiJ9CTtlEsw7SbyN",
+  "checkout_id": 40454486688023,
+  "checkout_token": "bbc7bd762b4665476cbb28a632051dd6",
+  "client_details": {
+    "accept_language": "en-PK",
+    "browser_height": null,
+    "browser_ip": "2400:adc1:143:d900:1dda:2c7a:fa29:2496",
+    "browser_width": null,
+    "session_hash": null,
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36"
+  },
+  "closed_at": null,
+  "confirmation_number": "67XTRVQH8",
+  "confirmed": true,
+  "contact_email": "sunshine@cyber.net.pk",
+  "created_at": "2026-02-12T21:09:32+05:00",
+  "currency": "PKR",
+  "current_subtotal_price": "5050.00",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "5050.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "5050.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "0.00",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "5050.00",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "5050.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "5050.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_tax": "770.34",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "770.34",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "770.34",
+      "currency_code": "PKR"
+    }
+  },
+  "customer_locale": "en-PK",
+  "device_id": null,
+  "discount_codes": [],
+  "duties_included": false,
+  "email": "sunshine@cyber.net.pk",
+  "estimated_taxes": false,
+  "financial_status": "pending",
+  "fulfillment_status": null,
+  "landing_site": "/products/trevor?utm_content=Facebook_UA&utm_source=facebook&variant=48098934915351&media_type=image&fbclid=IwY2xjawP62k9leHRuA2FlbQEwAGFkaWQBqy8HxSqa8XNydGMGYXBwX2lkDzQwOTk2MjYyMzA4NTYwOQABHgjUSiJMF0KnTtxfdi_0w4m6EVTMxSkck-S_ELNccKwhNXrYTp7vN51LEgRg_aem_",
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_business_entity_id": "MTExMjQ4NDYy",
+  "merchant_of_record_app_id": null,
+  "name": "100085858",
+  "note": "Order confirmed through whatsapp",
+  "note_attributes": [],
+  "number": 84858,
+  "order_number": 85858,
+  "order_status_url": "https://www.julke.pk/11248462/orders/270fb791022c0d9aee62226ee57723a2/authenticate?key=7def84092299ecad9bdb0d4ab28e39b2",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": [
+    "Cash on Delivery (COD)"
+  ],
+  "phone": null,
+  "po_number": null,
+  "presentment_currency": "PKR",
+  "processed_at": "2026-02-12T21:09:31+05:00",
+  "reference": null,
+  "referring_site": "https://l.facebook.com/",
+  "source_identifier": null,
+  "source_name": "web",
+  "source_url": null,
+  "subtotal_price": "5050.00",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "5050.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "5050.00",
+      "currency_code": "PKR"
+    }
+  },
+  "tags": "confirmed",
+  "tax_exempt": false,
+  "tax_lines": [
+    {
+      "price": "770.34",
+      "rate": 0.18,
+      "title": "GST",
+      "price_set": {
+        "shop_money": {
+          "amount": "770.34",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "770.34",
+          "currency_code": "PKR"
+        }
+      },
+      "channel_liable": false
+    }
+  ],
+  "taxes_included": true,
+  "test": false,
+  "token": "270fb791022c0d9aee62226ee57723a2",
+  "total_cash_rounding_payment_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_cash_rounding_refund_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_discounts": "0.00",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_line_items_price": "5050.00",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "5050.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "5050.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_outstanding": "5050.00",
+  "total_price": "5050.00",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "5050.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "5050.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tax": "770.34",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "770.34",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "770.34",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 1000,
+  "updated_at": "2026-02-12T21:10:38+05:00",
+  "user_id": null,
+  "billing_address": {
+    "first_name": "Naveed",
+    "address1": "41l dr.mehmood Hussain road pechs",
+    "phone": "03008286086",
+    "city": "Karachi",
+    "zip": "74500",
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Arshad",
+    "address2": null,
+    "company": null,
+    "latitude": 24.8797139,
+    "longitude": 67.0598979,
+    "name": "Naveed Arshad",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "customer": {
+    "id": 5502753013846,
+    "created_at": "2021-11-16T13:12:41+05:00",
+    "updated_at": "2026-02-12T21:09:33+05:00",
+    "first_name": "NAVEED",
+    "last_name": "ARSHAD",
+    "state": "disabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "email_marketing_consent": {
+      "state": "subscribed",
+      "opt_in_level": "single_opt_in",
+      "consent_updated_at": "2022-04-04T22:46:02+05:00"
+    },
+    "sms_marketing_consent": null,
+    "tags": "newsletter",
+    "email": "sunshine@cyber.net.pk",
+    "phone": null,
+    "currency": "PKR",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/5502753013846",
+    "default_address": {
+      "id": 11138258567447,
+      "customer_id": 5502753013846,
+      "first_name": "Naveed",
+      "last_name": "Arshad",
+      "company": null,
+      "address1": "41l dr.mehmood Hussain road pechs",
+      "address2": null,
+      "city": "Karachi",
+      "province": null,
+      "country": "Pakistan",
+      "zip": "74500",
+      "phone": "03008286086",
+      "name": "Naveed Arshad",
+      "province_code": null,
+      "country_code": "PK",
+      "country_name": "Pakistan",
+      "default": true
+    }
+  },
+  "discount_applications": [],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 17551687450903,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17551687450903",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 1000,
+      "name": "Trevor - XL / Dark Grey",
+      "price": "5050.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "5050.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "5050.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 9086617878807,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000003025",
+      "taxable": true,
+      "title": "Trevor",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 48098934915351,
+      "variant_inventory_management": "shopify",
+      "variant_title": "XL / Dark Grey",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "770.34",
+          "price_set": {
+            "shop_money": {
+              "amount": "770.34",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "770.34",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    }
+  ],
+  "payment_terms": null,
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Naveed",
+    "address1": "41l dr.mehmood Hussain road pechs",
+    "phone": "03008286086",
+    "city": "Karachi",
+    "zip": "74500",
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Arshad",
+    "address2": null,
+    "company": null,
+    "latitude": 24.8797139,
+    "longitude": 67.0598979,
+    "name": "Naveed Arshad",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "shipping_lines": [
+    {
+      "id": 5395340001559,
+      "carrier_identifier": null,
+      "code": "Free Shipping",
+      "discounted_price": "0.00",
+      "discounted_price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "is_removed": false,
+      "phone": null,
+      "price": "0.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "requested_fulfillment_service_id": null,
+      "source": "shopify",
+      "title": "Free Shipping",
+      "tax_lines": [],
+      "discount_allocations": []
+    }
+  ]
+}
