@@ -471,6 +471,13 @@ namespace JULKE
                             var address_line_2s = completeAddresss.Length > 80 ? completeAddresss.Substring(40, 40) : completeAddresss.Length > 40 ? completeAddresss.Substring(40, completeAddresss.Length - 40) : "";
                             var address_line_3s = (completeAddresss.Length > 120) ? completeAddresss.Substring(80, 40) : "";
 
+
+                            var St_completeAddresss = ShippingAddressInfo.Address1 + " " + ShippingAddressInfo.Address2;
+                            var St_address_line_1s = St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(0, 40) : St_completeAddresss;
+                            var St_address_line_2s = St_completeAddresss.Length > 80 ? St_completeAddresss.Substring(40, 40) : St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(40, St_completeAddresss.Length - 40) : "";
+                            var St_address_line_3s = (St_completeAddresss.Length > 120) ? St_completeAddresss.Substring(80, 40) : "";
+
+
                             PostDocument document = new PostDocument
                             {
                                 ORIGIN_APPLICATION = "OMNI",
@@ -481,6 +488,15 @@ namespace JULKE
                                 BT_ADDRESS_LINE3 = address_line_3s,
                                 BT_ADDRESS_LINE4 = "",
                                 BT_ADDRESS_LINE5 = BillingAddressInfo.City,
+
+                                ST_CUID = customePostResponceInfo.Sid,
+                                ST_COUNTRY = ShippingAddressInfo.Country,
+
+                                ST_ADDRESS_LINE1 = St_address_line_1s,
+                                ST_ADDRESS_LINE2 = St_address_line_2s,
+                                ST_ADDRESS_LINE3 = St_address_line_3s,
+                                ST_ADDRESS_LINE4 = "",
+                                ST_ADDRESS_LINE5 = ShippingAddressInfo.City,
                                 SUBSIDIARY_UID = storeInfo.SBS_SID,
                                 STORE_SID = storeInfo.SID,
                                 STORE_NO = storeInfo.STORE_NO,

@@ -172,9 +172,14 @@ namespace JULKE
         public string TENDER_NAME { get; set; }
         public string AUTHORIZATION_CODE { get; set; }
     }
-
+    
     public class PostDocument
     {
+      
+
+
+
+
         public string ORIGIN_APPLICATION { get; set; }//"ORIGIN_APPLICATION":"RPROPRISMWEB",
         public int ORDER_STATUS { get; set; }//"ORDER_STATUS":0,
         public int ORDER_TYPE { get; set; }//"ORDER_TYPE":0,
@@ -190,7 +195,7 @@ namespace JULKE
         public string BT_CUID { get; set; }//"BT_CUID":"549239131000133175",
         public string BT_ID { get; set; }      //"BT_ID":100000340,
         public string BT_COUNTRY { get; set; }
-        public string ST_CUID { get; set; }//"BT_CUID":"549239131000133175",
+        //"BT_CUID":"549239131000133175",
         public string ST_ID { get; set; }      //"BT_ID":100000340,
         public string PRICE_LVL { get; set; }//"PRICE_LVL_NAME":"4",
         public Decimal TOTAL_LINE_ITEM { get; set; }//"TOTAL_LINE_ITEM":"1",
@@ -220,6 +225,13 @@ namespace JULKE
         public string BT_ADDRESS_LINE3 { get; set; }
         public string BT_ADDRESS_LINE4 { get; set; }
         public string BT_ADDRESS_LINE5 { get; set; }
+        public string ST_CUID { get; set; }
+        public string ST_COUNTRY { get; set; }
+        public string ST_ADDRESS_LINE1 { get; set; }
+        public string ST_ADDRESS_LINE2 { get; set; }
+        public string ST_ADDRESS_LINE3 { get; set; }
+        public string ST_ADDRESS_LINE4 { get; set; }
+        public string ST_ADDRESS_LINE5 { get; set; }
         //public string BT_ADDRESS_LINE6 { get; set; }
         //public string BT_POSTAL_CODE { get; set; }
         public bool SEND_SALE_FULFILLMENT { get; set; }
