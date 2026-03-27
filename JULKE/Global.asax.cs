@@ -78,7 +78,15 @@ namespace JULKE
 
         public static bool Shopify_FulfilmentInProgress { get; set; }
         public static bool Data_SyncService_InProgress { get; set; }
-        public static string MongoConnectionString { get; set; } = "mongodb://admin:QndD7LgjOENy@185.197.250.149:27017/?authSource=admin";
+#if DEBUG
+        public static string MongoConnectionString { get; set; } = "mongodb://localhost:27017/";
+
+#endif
+#if !DEBUG
+  public static string MongoConnectionString { get; set; } = "mongodb://admin:QndD7LgjOENy@185.197.250.149:27017/?authSource=admin";
+
+#endif
+
         public static string MongoDatabase { get; set; } = "julke";
         public static string RetailProAuthSession { get; set; }
 

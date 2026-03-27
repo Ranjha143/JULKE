@@ -189,6 +189,8 @@ namespace JULKE
         public int IS_HELD { get; set; }//"IS_HELD":0,
         public int TENDER_TYPE { get; set; }//"TENDER_TYPE":-1,
         public string STORE_SID { get; set; }
+        public string BT_PRIMARY_PHONE_NO { get; set; }
+        public string ST_PRIMARY_PHONE_NO { get; set; }
         public string STORE_NO { get; set; }// "STORE_NO":2,
         public string STORE_NAME { get; set; }
         public string CUSTOMER_PO_NUMBER { get; set; }//"CUST_PO_NO":"BL860",

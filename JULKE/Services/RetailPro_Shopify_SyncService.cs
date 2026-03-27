@@ -466,19 +466,67 @@ namespace JULKE
                                 CUSTOMER_PO_NUMBER = "Gift Card";
                             }
 
-                            var completeAddresss = BillingAddressInfo.Address1 + " " + BillingAddressInfo.Address2;
-                            var address_line_1s = completeAddresss.Length > 40 ? completeAddresss.Substring(0, 40) : completeAddresss;
-                            var address_line_2s = completeAddresss.Length > 80 ? completeAddresss.Substring(40, 40) : completeAddresss.Length > 40 ? completeAddresss.Substring(40, completeAddresss.Length - 40) : "";
-                            var address_line_3s = (completeAddresss.Length > 120) ? completeAddresss.Substring(80, 40) : "";
+                            var completeAddresss = "";
+                            var address_line_1s ="";
+                            var address_line_2s ="";
+                            var address_line_3s="";
+                            var bt_primary_no = "";
+                            var St_completeAddresss = "";
+                            var St_address_line_1s = "";
+                            var St_address_line_2s = "";
+                            var St_address_line_3s = "";
+                            var st_primary_no = "";
+
+                            if (BillingAddressInfo != null && ShippingAddressInfo != null)
+                            {
+                                completeAddresss = BillingAddressInfo.Address1 + " " + BillingAddressInfo.Address2;
+                                address_line_1s = completeAddresss.Length > 40 ? completeAddresss.Substring(0, 40) : completeAddresss;
+                                address_line_2s = completeAddresss.Length > 80 ? completeAddresss.Substring(40, 40) : completeAddresss.Length > 40 ? completeAddresss.Substring(40, completeAddresss.Length - 40) : "";
+                                address_line_3s = (completeAddresss.Length > 120) ? completeAddresss.Substring(80, 40) : "";
+                                bt_primary_no = BillingAddressInfo.Phone;
+
+                                St_completeAddresss = ShippingAddressInfo.Address1 + " " + ShippingAddressInfo.Address2;
+                                St_address_line_1s = St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(0, 40) : St_completeAddresss;
+                                St_address_line_2s = St_completeAddresss.Length > 80 ? St_completeAddresss.Substring(40, 40) : St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(40, St_completeAddresss.Length - 40) : "";
+                                St_address_line_3s = (St_completeAddresss.Length > 120) ? St_completeAddresss.Substring(80, 40) : "";
+                                st_primary_no = ShippingAddressInfo.Phone;
+
+                            }
+                            else if (BillingAddressInfo != null && ShippingAddressInfo == null)
+                            {
+                                completeAddresss = BillingAddressInfo.Address1 + " " + BillingAddressInfo.Address2;
+                                address_line_1s = completeAddresss.Length > 40 ? completeAddresss.Substring(0, 40) : completeAddresss;
+                                address_line_2s = completeAddresss.Length > 80 ? completeAddresss.Substring(40, 40) : completeAddresss.Length > 40 ? completeAddresss.Substring(40, completeAddresss.Length - 40) : "";
+                                address_line_3s = (completeAddresss.Length > 120) ? completeAddresss.Substring(80, 40) : "";
+                                bt_primary_no = BillingAddressInfo.Phone;
+
+                                St_completeAddresss = BillingAddressInfo.Address1 + " " + BillingAddressInfo.Address2;
+                                St_address_line_1s = completeAddresss.Length > 40 ? completeAddresss.Substring(0, 40) : completeAddresss;
+                                St_address_line_2s = completeAddresss.Length > 80 ? completeAddresss.Substring(40, 40) : completeAddresss.Length > 40 ? completeAddresss.Substring(40, completeAddresss.Length - 40) : "";
+                                St_address_line_3s = (completeAddresss.Length > 120) ? completeAddresss.Substring(80, 40) : "";
+                                st_primary_no = BillingAddressInfo.Phone;
+
+                            }
+                            else if (BillingAddressInfo == null && ShippingAddressInfo != null)
+                            {
+                                
+                                completeAddresss = ShippingAddressInfo.Address1 + " " + ShippingAddressInfo.Address2;
+                                address_line_1s = St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(0, 40) : St_completeAddresss;
+                                address_line_2s = St_completeAddresss.Length > 80 ? St_completeAddresss.Substring(40, 40) : St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(40, St_completeAddresss.Length - 40) : "";
+                                address_line_3s = (St_completeAddresss.Length > 120) ? St_completeAddresss.Substring(80, 40) : "";
+                                bt_primary_no = ShippingAddressInfo.Phone;
 
 
-                            var St_completeAddresss = ShippingAddressInfo.Address1 + " " + ShippingAddressInfo.Address2;
-                            var St_address_line_1s = St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(0, 40) : St_completeAddresss;
-                            var St_address_line_2s = St_completeAddresss.Length > 80 ? St_completeAddresss.Substring(40, 40) : St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(40, St_completeAddresss.Length - 40) : "";
-                            var St_address_line_3s = (St_completeAddresss.Length > 120) ? St_completeAddresss.Substring(80, 40) : "";
+                                St_completeAddresss = ShippingAddressInfo.Address1 + " " + ShippingAddressInfo.Address2;
+                                St_address_line_1s = St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(0, 40) : St_completeAddresss;
+                                St_address_line_2s = St_completeAddresss.Length > 80 ? St_completeAddresss.Substring(40, 40) : St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(40, St_completeAddresss.Length - 40) : "";
+                                St_address_line_3s = (St_completeAddresss.Length > 120) ? St_completeAddresss.Substring(80, 40) : "";
+                                st_primary_no = ShippingAddressInfo.Phone;
+                            }
 
 
-                            PostDocument document = new PostDocument
+
+                                PostDocument document = new PostDocument
                             {
                                 ORIGIN_APPLICATION = "OMNI",
                                 BT_CUID = customePostResponceInfo.Sid,
@@ -488,10 +536,10 @@ namespace JULKE
                                 BT_ADDRESS_LINE3 = address_line_3s,
                                 BT_ADDRESS_LINE4 = "",
                                 BT_ADDRESS_LINE5 = BillingAddressInfo.City,
-
+                                BT_PRIMARY_PHONE_NO = bt_primary_no,
                                 ST_CUID = customePostResponceInfo.Sid,
                                 ST_COUNTRY = ShippingAddressInfo.Country,
-
+                                ST_PRIMARY_PHONE_NO =  st_primary_no,
                                 ST_ADDRESS_LINE1 = St_address_line_1s,
                                 ST_ADDRESS_LINE2 = St_address_line_2s,
                                 ST_ADDRESS_LINE3 = St_address_line_3s,
@@ -606,7 +654,7 @@ namespace JULKE
                                     }
 
 
-                                    if(OrderInfo.PaymentGatewayNames.Contains("Bank Deposit"))
+                                    if(OrderInfo.PaymentGatewayNames.Contains("Bank Deposit") && totalPrice == totalOutstanding)
                                     {
                                         SoPaidamount = totalOutstanding;
                                     }
@@ -652,7 +700,7 @@ namespace JULKE
                                             });
 
                                         }
-                                        else if (CustomerPoNumber.ToUpper() == "B Deposit") //10=GiftCard
+                                        else if (OrderInfo.PaymentGatewayNames.Contains("Bank Deposit")) //10=GiftCard
                                         {
                                             tenderPayload.Add(new PostTender
                                             {
@@ -682,6 +730,7 @@ namespace JULKE
                                                 TENDER_TYPE = "2",
                                                 TENDER_NAME = TenderName
                                             });
+
                                         }
                                       
 
@@ -708,6 +757,7 @@ namespace JULKE
                                                 STATUS = 4
                                             }
                                         };
+
                                         var documentStatusResponce = RetailProApiCall.PUT(documentStatusLink, orderStatusPuts);
                                         docPostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(documentStatusResponce.Content);
                                         docPostResponceInfo = docPostResponceObject.FirstOrDefault();
