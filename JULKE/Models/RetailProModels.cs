@@ -195,6 +195,10 @@ namespace JULKE
         public string STORE_NAME { get; set; }
         public string CUSTOMER_PO_NUMBER { get; set; }//"CUST_PO_NO":"BL860",
         public string BT_CUID { get; set; }//"BT_CUID":"549239131000133175",
+        public string BT_FIRST_NAME { get; set; }//"BT_CUID":"549239131000133175",
+        public string ST_FIRST_NAME { get; set; }//"BT_CUID":"549239131000133175",
+        public string BT_LAST_NAME { get; set; }//"BT_CUID":"549239131000133175",
+        public string ST_LAST_NAME { get; set; }//"BT_CUID":"549239131000133175",
         public string BT_ID { get; set; }      //"BT_ID":100000340,
         public string BT_COUNTRY { get; set; }
         //"BT_CUID":"549239131000133175",

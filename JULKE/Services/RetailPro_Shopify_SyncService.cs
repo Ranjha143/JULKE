@@ -231,76 +231,45 @@ namespace JULKE
                         if (BillingAddressInfo == null) BillingAddressInfo = ShippingAddressInfo;
 
                         string CustomerPhoneNumber = CustomerInfo.Phone != null ? CustomerInfo.Phone : BillingAddressInfo.Phone != null ? BillingAddressInfo.Phone : ShippingAddressInfo.Phone != null ? ShippingAddressInfo.Phone : null;
-
-                        if (!string.IsNullOrEmpty(CustomerPhoneNumber))
+                        string Customefirstrname = CustomerInfo.FirstName != null ? CustomerInfo.FirstName : BillingAddressInfo.FirstName != null ? BillingAddressInfo.FirstName : ShippingAddressInfo.FirstName != null ? ShippingAddressInfo.FirstName : null;
+                        // string Customelastrname = CustomerInfo.LastName != null ? CustomerInfo.LastName : BillingAddressInfo.LastName != null ? BillingAddressInfo.LastName : ShippingAddressInfo.LastName != null ? ShippingAddressInfo.LastName : null;
+                        //string addressline = BillingAddressInfo.Address1 != 
+                        if (!string.IsNullOrEmpty(Customefirstrname))
                         {
-                            var CustomerQuery = " select C.SID, " +
-                                " C.CUST_ID, " +
-                                " C.FIRST_NAME, " +
-                                " C.LAST_NAME, " +
-                                " P.PHONE_NO " +
-                                " FROM Rps.customer C, " +
-                                " RPS.Customer_Phone P " +
-                                " WHERE C.SID = P.CUST_SID " +
-                                " AND substr(P.PHONE_NO,-10) like substr('%" + CustomerPhoneNumber + "',-10)";
 
-                            var ExistingCustomer = connection.Query<Customer_Address_info>(CustomerQuery).FirstOrDefault();
 
-                            int AddressCount = 0;
-                            string BtCountry;
-
-                            if (ExistingCustomer != null)
+                            if (!string.IsNullOrEmpty(CustomerPhoneNumber))
                             {
-                                customePostResponceInfo.Sid = ExistingCustomer.SID;
-                                BtCountry = BillingAddressInfo.Country;
+                                var CustomerQuery = " select C.SID, " +
+                                    " C.CUST_ID, " +
+                                    " C.FIRST_NAME, " +
+                                    " C.LAST_NAME, " +
+                                    " P.PHONE_NO " +
+                                    " FROM Rps.customer C, " +
+                                    " RPS.Customer_Phone P " +
+                                    " WHERE C.SID = P.CUST_SID " +
+                                    " AND substr(P.PHONE_NO,-10) like substr('%" + CustomerPhoneNumber + "',-10)";
 
-                                var completeAddress = BillingAddressInfo.Address1 + " " + BillingAddressInfo.Address2;
+                                var ExistingCustomer = connection.Query<Customer_Address_info>(CustomerQuery).FirstOrDefault();
 
-                                var CustSid = ExistingCustomer.SID.ToString();
-                                var addressCountQuery = " select Count(*) from RPS.Customer_Address A where A.CUST_SID = " + CustSid + "";
-                                AddressCount = connection.Query<int>(addressCountQuery).FirstOrDefault();
+                                int AddressCount = 0;
+                                string BtCountry;
 
-                                var existingAddressQuery = $" select PRIMARY_FLAG, ACTIVE, ADDRESS_1, ADDRESS_2, ADDRESS_3, CITY  from RPS.Customer_Address A where CUST_SID = {ExistingCustomer.SID} AND CITY like '{BillingAddressInfo.City}'";
-                                var existingAddress = connection.Query<Customer_Address_info>(existingAddressQuery).FirstOrDefault();
-
-                                if (existingAddress == null)
+                                if (ExistingCustomer != null)
                                 {
-                                    var address_line_1 = completeAddress.Length > 40 ? completeAddress.Substring(0, 40) : completeAddress;
-                                    var address_line_2 = completeAddress.Length > 80 ? completeAddress.Substring(40, 40) : completeAddress.Length > 40 ? completeAddress.Substring(40, completeAddress.Length - 40) : "";
-                                    var address_line_3 = (completeAddress.Length > 120) ? completeAddress.Substring(80, 40) : "";
+                                    customePostResponceInfo.Sid = ExistingCustomer.SID;
+                                    BtCountry = BillingAddressInfo.Country;
 
-                                    var PostAddress = new List<BillingAddress>();
+                                    var completeAddress = BillingAddressInfo.Address1 + " " + BillingAddressInfo.Address2;
 
-                                    PostAddress.Add(new BillingAddress
-                                    {
-                                        origin_application =  "OMNI",
-                                        customer_sid = CustSid,
-                                        active = true,
-                                        address_allow_contact = false,
-                                        primary_flag = true,
-                                        City = BillingAddressInfo.City,
-                                        address_line_1 = address_line_1,
-                                        address_line_2 = address_line_2,
-                                        address_line_3 = address_line_3,
-                                        seq_no = ++AddressCount
-                                    });
+                                    var CustSid = ExistingCustomer.SID.ToString();
+                                    var addressCountQuery = " select Count(*) from RPS.Customer_Address A where A.CUST_SID = " + CustSid + "";
+                                    AddressCount = connection.Query<int>(addressCountQuery).FirstOrDefault();
 
-                                    string customerAddressPostLink = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/customer/" + CustSid + "/address";
-                                    var customerPostResponse = RetailProApiCall.Post(customerAddressPostLink, PostAddress);
-                                }
-                                else
-                                {
-                                    var existingAddressLine = existingAddress.ADDRESS_1 + existingAddress.ADDRESS_2 + existingAddress.ADDRESS_3;
+                                    var existingAddressQuery = $" select PRIMARY_FLAG, ACTIVE, ADDRESS_1, ADDRESS_2, ADDRESS_3, CITY  from RPS.Customer_Address A where CUST_SID = {ExistingCustomer.SID} AND CITY like '{BillingAddressInfo.City}'";
+                                    var existingAddress = connection.Query<Customer_Address_info>(existingAddressQuery).FirstOrDefault();
 
-                                    completeAddress = RemoveSpecialCharacters(completeAddress);
-                                    existingAddressLine = RemoveSpecialCharacters(existingAddressLine);
-
-                                    var aString1 = completeAddress.ToUpper().Replace(",", " ").Split(' ').ToList().OrderBy(s => s);
-                                    var aString2 = existingAddressLine.ToUpper().Replace(",", " ").Split(' ').ToList().OrderBy(s => s);
-
-                                    var sameAddress = Enumerable.SequenceEqual(aString1, aString2);
-
-                                    if (!sameAddress)
+                                    if (existingAddress == null)
                                     {
                                         var address_line_1 = completeAddress.Length > 40 ? completeAddress.Substring(0, 40) : completeAddress;
                                         var address_line_2 = completeAddress.Length > 80 ? completeAddress.Substring(40, 40) : completeAddress.Length > 40 ? completeAddress.Substring(40, completeAddress.Length - 40) : "";
@@ -310,7 +279,7 @@ namespace JULKE
 
                                         PostAddress.Add(new BillingAddress
                                         {
-                                            origin_application =  "OMNI",
+                                            origin_application = "OMNI",
                                             customer_sid = CustSid,
                                             active = true,
                                             address_allow_contact = false,
@@ -325,431 +294,491 @@ namespace JULKE
                                         string customerAddressPostLink = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/customer/" + CustSid + "/address";
                                         var customerPostResponse = RetailProApiCall.Post(customerAddressPostLink, PostAddress);
                                     }
+                                    else
+                                    {
+                                        var existingAddressLine = existingAddress.ADDRESS_1 + existingAddress.ADDRESS_2 + existingAddress.ADDRESS_3;
+
+                                        completeAddress = RemoveSpecialCharacters(completeAddress);
+                                        existingAddressLine = RemoveSpecialCharacters(existingAddressLine);
+
+                                        var aString1 = completeAddress.ToUpper().Replace(",", " ").Split(' ').ToList().OrderBy(s => s);
+                                        var aString2 = existingAddressLine.ToUpper().Replace(",", " ").Split(' ').ToList().OrderBy(s => s);
+
+                                        var sameAddress = Enumerable.SequenceEqual(aString1, aString2);
+
+                                        if (!sameAddress)
+                                        {
+                                            var address_line_1 = completeAddress.Length > 40 ? completeAddress.Substring(0, 40) : completeAddress;
+                                            var address_line_2 = completeAddress.Length > 80 ? completeAddress.Substring(40, 40) : completeAddress.Length > 40 ? completeAddress.Substring(40, completeAddress.Length - 40) : "";
+                                            var address_line_3 = (completeAddress.Length > 120) ? completeAddress.Substring(80, 40) : "";
+
+                                            var PostAddress = new List<BillingAddress>();
+
+                                            PostAddress.Add(new BillingAddress
+                                            {
+                                                origin_application = "OMNI",
+                                                customer_sid = CustSid,
+                                                active = true,
+                                                address_allow_contact = false,
+                                                primary_flag = true,
+                                                City = BillingAddressInfo.City,
+                                                address_line_1 = address_line_1,
+                                                address_line_2 = address_line_2,
+                                                address_line_3 = address_line_3,
+                                                seq_no = ++AddressCount
+                                            });
+
+                                            string customerAddressPostLink = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/customer/" + CustSid + "/address";
+                                            var customerPostResponse = RetailProApiCall.Post(customerAddressPostLink, PostAddress);
+                                        }
+                                    }
                                 }
-                            }
-                            else // Create Customer
-                            {
-                                List<PostCustomer> postCustomer = new List<PostCustomer>();
-                                PostCustomer customer = new PostCustomer
+                                else // Create Customer
                                 {
-                                    origin_application =  "OMNI",
-                                    store_sid = storeInfo.SID,
-                                    last_name = BillingAddressInfo.LastName,
-                                    first_name = BillingAddressInfo.FirstName,
-                                    customer_active = 1,
-                                    customer_type = 0,
-                                    full_name = (BillingAddressInfo.FirstName + " " + BillingAddressInfo.LastName).Trim(),
-                                    phones = new List<Phone>(),
-                                    address = new List<BillingAddress>()
-                                };
+                                    List<PostCustomer> postCustomer = new List<PostCustomer>();
+                                    PostCustomer customer = new PostCustomer
+                                    {
+                                        origin_application = "OMNI",
+                                        store_sid = storeInfo.SID,
+                                        last_name = BillingAddressInfo.LastName,
+                                        first_name = BillingAddressInfo.FirstName,
+                                        customer_active = 1,
+                                        customer_type = 0,
+                                        full_name = (BillingAddressInfo.FirstName + " " + BillingAddressInfo.LastName).Trim(),
+                                        phones = new List<Phone>(),
+                                        address = new List<BillingAddress>()
+                                    };
 
-                                customer.phones.Add(new Phone
-                                {
-                                    origin_application =  "OMNI",
-                                    phone_no = CustomerInfo.Phone != null ? CustomerInfo.Phone : BillingAddressInfo.Phone,
-                                    primary_flag = true,
-                                    seq_no = 1,
-                                });
+                                    customer.phones.Add(new Phone
+                                    {
+                                        origin_application = "OMNI",
+                                        phone_no = CustomerInfo.Phone != null ? CustomerInfo.Phone : BillingAddressInfo.Phone,
+                                        primary_flag = true,
+                                        seq_no = 1,
+                                    });
 
-                                var completeAddress = BillingAddressInfo.Address1 + " " + BillingAddressInfo.Address2;
-                                var address_line_1 = completeAddress.Length > 40 ? completeAddress.Substring(0, 40) : completeAddress;
-                                var address_line_2 = completeAddress.Length > 80 ? completeAddress.Substring(40, 40) : completeAddress.Length > 40 ? completeAddress.Substring(40, completeAddress.Length - 40) : "";
-                                var address_line_3 = (completeAddress.Length > 120) ? completeAddress.Substring(80, 40) : "";
+                                    var completeAddress = BillingAddressInfo.Address1 + " " + BillingAddressInfo.Address2;
+                                    var address_line_1 = completeAddress.Length > 40 ? completeAddress.Substring(0, 40) : completeAddress;
+                                    var address_line_2 = completeAddress.Length > 80 ? completeAddress.Substring(40, 40) : completeAddress.Length > 40 ? completeAddress.Substring(40, completeAddress.Length - 40) : "";
+                                    var address_line_3 = (completeAddress.Length > 120) ? completeAddress.Substring(80, 40) : "";
 
-                                customer.address.Add(new BillingAddress
-                                {
-                                    origin_application = "OMNI",
-                                    active = true,
-                                    address_allow_contact = false,
-                                    primary_flag = true,
-                                    City = BillingAddressInfo.City,
-                                    address_line_1 = address_line_1,
-                                    address_line_2 = address_line_2,
-                                    address_line_3 = address_line_3,
-                                    address_line_5 = BillingAddressInfo.City,
-                                    seq_no = ++AddressCount
-                                });
-                                postCustomer.Add(customer);
+                                    customer.address.Add(new BillingAddress
+                                    {
+                                        origin_application = "OMNI",
+                                        active = true,
+                                        address_allow_contact = false,
+                                        primary_flag = true,
+                                        City = BillingAddressInfo.City,
+                                        address_line_1 = address_line_1,
+                                        address_line_2 = address_line_2,
+                                        address_line_3 = address_line_3,
+                                        address_line_5 = BillingAddressInfo.City,
+                                        seq_no = ++AddressCount
+                                    });
+                                    postCustomer.Add(customer);
 
-                                string customerPostLink = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/customer";
-                                var customerPostResponse = RetailProApiCall.Post(customerPostLink, postCustomer);
+                                    string customerPostLink = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/customer";
+                                    var customerPostResponse = RetailProApiCall.Post(customerPostLink, postCustomer);
 
-                                if (customerPostResponse.StatusCode == HttpStatusCode.Created)
-                                {
-                                    var customePostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(customerPostResponse.Content);
-                                    customePostResponceInfo = customePostResponceObject.FirstOrDefault();
+                                    if (customerPostResponse.StatusCode == HttpStatusCode.Created)
+                                    {
+                                        var customePostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(customerPostResponse.Content);
+                                        customePostResponceInfo = customePostResponceObject.FirstOrDefault();
+                                    }
                                 }
-                            }
 
-                            #endregion
+                        #endregion
 
-                        #region ====================================================================================================== Line Items 
+                                #region ====================================================================================================== Line Items 
 
-                            var lineItems = OrderInfo.LineItems;
-                            var incomingSkuList = lineItems.Select(a => a.Sku).ToList();
-                            var skuString = "'" + String.Join("','", incomingSkuList) + "'";
-                            var itemCheckQuery = $"select SID, UPC,ALU, DESCRIPTION1, ACTIVE from RPS.invn_sbs_item where UPC in ({skuString}) and ACTIVE = 1";
-                            var itemsResult = connection.Query<ItemInfo>(itemCheckQuery).ToList();
+                                var lineItems = OrderInfo.LineItems;
+                                var incomingSkuList = lineItems.Select(a => a.Sku).ToList();
+                                var skuString = "'" + String.Join("','", incomingSkuList) + "'";
+                                var itemCheckQuery = $"select SID, UPC,ALU, DESCRIPTION1, ACTIVE from RPS.invn_sbs_item where UPC in ({skuString}) and ACTIVE = 1";
+                                var itemsResult = connection.Query<ItemInfo>(itemCheckQuery).ToList();
 
-                            var existingSkuList = itemsResult.Select(s => s.UPC).ToList();
+                                var existingSkuList = itemsResult.Select(s => s.UPC).ToList();
 
-                            var exceptionItems = incomingSkuList.Except(existingSkuList).ToList();
+                                var exceptionItems = incomingSkuList.Except(existingSkuList).ToList();
 
-                            if (exceptionItems.Count > 0)
-                            {
-                                logDocument = new BsonDocument { { "event", "Document POST" }, { "document_id", OrderInfo.Name }, { "message", "Order Id Not found in POS" }, { "event_time_date", DateTime.Now } };
-                                return "Error";
-                            }
-
-                            var priceLvlQry = "select PRICE_LVL from rps.price_level  where sid = " + storeInfo.ACTIVE_PRICE_LVL_SID;
-                            var activePriceLevelId = connection.Query<string>(priceLvlQry).FirstOrDefault();
-
-                            var TOTAL_LINE_ITEM = lineItems.Count();
-                            var ORDER_QTY = lineItems.Sum(s => s.Quantity);
-                            List<ItemPostInfo> ItemPostInfo = new List<ItemPostInfo>();
-                            int itemPos = 1;
-                            foreach (var item in lineItems)
-                            {
-
-                                var refItem = itemsResult.Where(a => a.UPC == item.Sku).FirstOrDefault();
-                                var priceQry =
-                                    "select PRICE from rps.invn_sbs_price where PRICE_LVL_SID = '" +
-                                    storeInfo.ACTIVE_PRICE_LVL_SID +
-                                    "' AND INVN_SBS_ITEM_SID = '" + refItem.SID + "'";
-
-
-                                var itemPrice = connection.Query<Decimal>(priceQry).FirstOrDefault();
-
-                                ItemPostInfo.Add(new ItemPostInfo
+                                if (exceptionItems.Count > 0)
                                 {
-                                    ORIGIN_APPLICATION = "OMNI",
-                                    INVN_SBS_ITEM_SID = refItem.SID,
-                                    Order_Type = 0,
-                                    Item_Type = 3,
-                                    FULFILL_STORE_SID = storeInfo.SID,
-                                    MANUAL_DISC_TYPE = 0,
-                                    QUANTITY = item.Quantity,
-                                    MANUAL_DISC_VALUE = string.IsNullOrEmpty(item.Price) ? 0 : Convert.ToDecimal(item.Price)
-                                });
-                                itemPos++;
-                            }
+                                    logDocument = new BsonDocument { { "event", "Document POST" }, { "document_id", OrderInfo.Name }, { "message", "Order Id Not found in POS" }, { "event_time_date", DateTime.Now } };
+                                    return "Error";
+                                }
 
-                            var CustomerPoNumber = "COD";
-                            if (OrderInfo.PaymentGatewayNames.Contains("Gift Card"))
-                            {
-                                CustomerPoNumber = "Gift Card";
-                            }
-                            else if (!OrderInfo.PaymentGatewayNames.Any(g => g.ToUpper().Contains("COD")) && !OrderInfo.PaymentGatewayNames.Contains("Gift Card"))
-                            {
-                                CustomerPoNumber = "Paid";
-                            }else if (OrderInfo.PaymentGatewayNames.Contains("Bank Deposit"))
-                            {
-                                CustomerPoNumber = "Paid";
-                            }
+                                var priceLvlQry = "select PRICE_LVL from rps.price_level  where sid = " + storeInfo.ACTIVE_PRICE_LVL_SID;
+                                var activePriceLevelId = connection.Query<string>(priceLvlQry).FirstOrDefault();
+
+                                var TOTAL_LINE_ITEM = lineItems.Count();
+                                var ORDER_QTY = lineItems.Sum(s => s.Quantity);
+                                List<ItemPostInfo> ItemPostInfo = new List<ItemPostInfo>();
+                                int itemPos = 1;
+                                foreach (var item in lineItems)
+                                {
+
+                                    var refItem = itemsResult.Where(a => a.UPC == item.Sku).FirstOrDefault();
+                                    var priceQry =
+                                        "select PRICE from rps.invn_sbs_price where PRICE_LVL_SID = '" +
+                                        storeInfo.ACTIVE_PRICE_LVL_SID +
+                                        "' AND INVN_SBS_ITEM_SID = '" + refItem.SID + "'";
+
+
+                                    var itemPrice = connection.Query<Decimal>(priceQry).FirstOrDefault();
+
+                                    ItemPostInfo.Add(new ItemPostInfo
+                                    {
+                                        ORIGIN_APPLICATION = "OMNI",
+                                        INVN_SBS_ITEM_SID = refItem.SID,
+                                        Order_Type = 0,
+                                        Item_Type = 3,
+                                        FULFILL_STORE_SID = storeInfo.SID,
+                                        MANUAL_DISC_TYPE = 0,
+                                        QUANTITY = item.Quantity,
+                                        MANUAL_DISC_VALUE = string.IsNullOrEmpty(item.Price) ? 0 : Convert.ToDecimal(item.Price)
+                                    });
+                                    itemPos++;
+                                }
+
+                                var CustomerPoNumber = "COD";
+                                if (OrderInfo.PaymentGatewayNames.Contains("Gift Card"))
+                                {
+                                    CustomerPoNumber = "Gift Card";
+                                }
+                                else if (!OrderInfo.PaymentGatewayNames.Any(g => g.ToUpper().Contains("COD")) && !OrderInfo.PaymentGatewayNames.Contains("Gift Card"))
+                                {
+                                    CustomerPoNumber = "Paid";
+                                }
+                                else if (OrderInfo.PaymentGatewayNames.Contains("Bank Deposit"))
+                                {
+                                    CustomerPoNumber = "Paid";
+                                }
 
                                 List<PostDocument> postDocument = new List<PostDocument>();
 
-                            var CUSTOMER_PO_NUMBER = "COD";
-                            if (CustomerPoNumber == "Paid")
-                            {
-                                CUSTOMER_PO_NUMBER = "Card";
-                                if (OrderInfo.PaymentGatewayNames.FirstOrDefault().Contains("BaadMay") || OrderInfo.PaymentGatewayNames.FirstOrDefault().Contains("Pay Later"))
-                                    CUSTOMER_PO_NUMBER = "BNPL";
-                                if (OrderInfo.PaymentGatewayNames.FirstOrDefault().Contains("bank_alfalah_mpgs_payment_gateway_all_master_visa_cards_are_accepted_"))
-                                    CUSTOMER_PO_NUMBER = "BAF";
-                                if (OrderInfo.PaymentGatewayNames.Contains("Bank Deposit"))
-                                    CUSTOMER_PO_NUMBER = "B Deposit";
+                                var CUSTOMER_PO_NUMBER = "COD";
+                                if (CustomerPoNumber == "Paid")
+                                {
+                                    CUSTOMER_PO_NUMBER = "Card";
+                                    if (OrderInfo.PaymentGatewayNames.FirstOrDefault().Contains("BaadMay") || OrderInfo.PaymentGatewayNames.FirstOrDefault().Contains("Pay Later"))
+                                        CUSTOMER_PO_NUMBER = "BNPL";
+                                    if (OrderInfo.PaymentGatewayNames.FirstOrDefault().Contains("bank_alfalah_mpgs_payment_gateway_all_master_visa_cards_are_accepted_"))
+                                        CUSTOMER_PO_NUMBER = "BAF";
+                                    if (OrderInfo.PaymentGatewayNames.Contains("Bank Deposit"))
+                                        CUSTOMER_PO_NUMBER = "B Deposit";
 
-                            }
-                            else if (CustomerPoNumber == "Gift Card")
-                            {
-                                CUSTOMER_PO_NUMBER = "Gift Card";
-                            }
+                                }
+                                else if (CustomerPoNumber == "Gift Card")
+                                {
+                                    CUSTOMER_PO_NUMBER = "Gift Card";
+                                }
 
-                            var completeAddresss = "";
-                            var address_line_1s ="";
-                            var address_line_2s ="";
-                            var address_line_3s="";
-                            var bt_primary_no = "";
-                            var St_completeAddresss = "";
-                            var St_address_line_1s = "";
-                            var St_address_line_2s = "";
-                            var St_address_line_3s = "";
-                            var st_primary_no = "";
+                                var completeAddresss = "";
+                                var address_line_1s = "";
+                                var address_line_2s = "";
+                                var address_line_3s = "";
+                                var bt_primary_no = "";
+                                var St_completeAddresss = "";
+                                var St_address_line_1s = "";
+                                var St_address_line_2s = "";
+                                var St_address_line_3s = "";
+                                var st_primary_no = "";
+                                var bt_firstname = "";
+                                var st_firstname = "";
+                                var bt_lastname = "";
+                                var st_lastname = "";
+                               
 
-                            if (BillingAddressInfo != null && ShippingAddressInfo != null)
-                            {
-                                completeAddresss = BillingAddressInfo.Address1 + " " + BillingAddressInfo.Address2;
-                                address_line_1s = completeAddresss.Length > 40 ? completeAddresss.Substring(0, 40) : completeAddresss;
-                                address_line_2s = completeAddresss.Length > 80 ? completeAddresss.Substring(40, 40) : completeAddresss.Length > 40 ? completeAddresss.Substring(40, completeAddresss.Length - 40) : "";
-                                address_line_3s = (completeAddresss.Length > 120) ? completeAddresss.Substring(80, 40) : "";
-                                bt_primary_no = BillingAddressInfo.Phone;
-
-                                St_completeAddresss = ShippingAddressInfo.Address1 + " " + ShippingAddressInfo.Address2;
-                                St_address_line_1s = St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(0, 40) : St_completeAddresss;
-                                St_address_line_2s = St_completeAddresss.Length > 80 ? St_completeAddresss.Substring(40, 40) : St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(40, St_completeAddresss.Length - 40) : "";
-                                St_address_line_3s = (St_completeAddresss.Length > 120) ? St_completeAddresss.Substring(80, 40) : "";
-                                st_primary_no = ShippingAddressInfo.Phone;
-
-                            }
-                            else if (BillingAddressInfo != null && ShippingAddressInfo == null)
-                            {
-                                completeAddresss = BillingAddressInfo.Address1 + " " + BillingAddressInfo.Address2;
-                                address_line_1s = completeAddresss.Length > 40 ? completeAddresss.Substring(0, 40) : completeAddresss;
-                                address_line_2s = completeAddresss.Length > 80 ? completeAddresss.Substring(40, 40) : completeAddresss.Length > 40 ? completeAddresss.Substring(40, completeAddresss.Length - 40) : "";
-                                address_line_3s = (completeAddresss.Length > 120) ? completeAddresss.Substring(80, 40) : "";
-                                bt_primary_no = BillingAddressInfo.Phone;
-
-                                St_completeAddresss = BillingAddressInfo.Address1 + " " + BillingAddressInfo.Address2;
-                                St_address_line_1s = completeAddresss.Length > 40 ? completeAddresss.Substring(0, 40) : completeAddresss;
-                                St_address_line_2s = completeAddresss.Length > 80 ? completeAddresss.Substring(40, 40) : completeAddresss.Length > 40 ? completeAddresss.Substring(40, completeAddresss.Length - 40) : "";
-                                St_address_line_3s = (completeAddresss.Length > 120) ? completeAddresss.Substring(80, 40) : "";
-                                st_primary_no = BillingAddressInfo.Phone;
-
-                            }
-                            else if (BillingAddressInfo == null && ShippingAddressInfo != null)
-                            {
-                                
-                                completeAddresss = ShippingAddressInfo.Address1 + " " + ShippingAddressInfo.Address2;
-                                address_line_1s = St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(0, 40) : St_completeAddresss;
-                                address_line_2s = St_completeAddresss.Length > 80 ? St_completeAddresss.Substring(40, 40) : St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(40, St_completeAddresss.Length - 40) : "";
-                                address_line_3s = (St_completeAddresss.Length > 120) ? St_completeAddresss.Substring(80, 40) : "";
-                                bt_primary_no = ShippingAddressInfo.Phone;
+                                if (BillingAddressInfo != null && ShippingAddressInfo != null)
+                                {
+                                    completeAddresss = BillingAddressInfo.Address1 + " " + BillingAddressInfo.Address2;
+                                    address_line_1s = completeAddresss.Length > 40 ? completeAddresss.Substring(0, 40) : completeAddresss;
+                                    address_line_2s = completeAddresss.Length > 80 ? completeAddresss.Substring(40, 40) : completeAddresss.Length > 40 ? completeAddresss.Substring(40, completeAddresss.Length - 40) : "";
+                                    address_line_3s = (completeAddresss.Length > 120) ? completeAddresss.Substring(80, 40) : "";
+                                    bt_primary_no = BillingAddressInfo.Phone;
+                                    bt_firstname = BillingAddressInfo.FirstName;
+                                    bt_lastname = BillingAddressInfo.LastName;
 
 
-                                St_completeAddresss = ShippingAddressInfo.Address1 + " " + ShippingAddressInfo.Address2;
-                                St_address_line_1s = St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(0, 40) : St_completeAddresss;
-                                St_address_line_2s = St_completeAddresss.Length > 80 ? St_completeAddresss.Substring(40, 40) : St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(40, St_completeAddresss.Length - 40) : "";
-                                St_address_line_3s = (St_completeAddresss.Length > 120) ? St_completeAddresss.Substring(80, 40) : "";
-                                st_primary_no = ShippingAddressInfo.Phone;
-                            }
+                                    St_completeAddresss = ShippingAddressInfo.Address1 + " " + ShippingAddressInfo.Address2;
+                                    St_address_line_1s = St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(0, 40) : St_completeAddresss;
+                                    St_address_line_2s = St_completeAddresss.Length > 80 ? St_completeAddresss.Substring(40, 40) : St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(40, St_completeAddresss.Length - 40) : "";
+                                    St_address_line_3s = (St_completeAddresss.Length > 120) ? St_completeAddresss.Substring(80, 40) : "";
+                                    st_primary_no = ShippingAddressInfo.Phone;
+                                    st_firstname = ShippingAddressInfo.FirstName;
+                                    st_lastname = ShippingAddressInfo.LastName; 
+
+                                }
+                                else if (BillingAddressInfo != null && ShippingAddressInfo == null)
+                                {
+                                    completeAddresss = BillingAddressInfo.Address1 + " " + BillingAddressInfo.Address2;
+                                    address_line_1s = completeAddresss.Length > 40 ? completeAddresss.Substring(0, 40) : completeAddresss;
+                                    address_line_2s = completeAddresss.Length > 80 ? completeAddresss.Substring(40, 40) : completeAddresss.Length > 40 ? completeAddresss.Substring(40, completeAddresss.Length - 40) : "";
+                                    address_line_3s = (completeAddresss.Length > 120) ? completeAddresss.Substring(80, 40) : "";
+                                    bt_primary_no = BillingAddressInfo.Phone;
+                                    bt_firstname = BillingAddressInfo.FirstName;
+                                    bt_lastname = BillingAddressInfo.LastName;
+
+                                    St_completeAddresss = BillingAddressInfo.Address1 + " " + BillingAddressInfo.Address2;
+                                    St_address_line_1s = completeAddresss.Length > 40 ? completeAddresss.Substring(0, 40) : completeAddresss;
+                                    St_address_line_2s = completeAddresss.Length > 80 ? completeAddresss.Substring(40, 40) : completeAddresss.Length > 40 ? completeAddresss.Substring(40, completeAddresss.Length - 40) : "";
+                                    St_address_line_3s = (completeAddresss.Length > 120) ? completeAddresss.Substring(80, 40) : "";
+                                    st_primary_no = BillingAddressInfo.Phone;
+                                    st_firstname = BillingAddressInfo.FirstName;
+                                    st_lastname = BillingAddressInfo.LastName;
+
+                                }
+                                else if (BillingAddressInfo == null && ShippingAddressInfo != null)
+                                {
+
+                                    completeAddresss = ShippingAddressInfo.Address1 + " " + ShippingAddressInfo.Address2;
+                                    address_line_1s = St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(0, 40) : St_completeAddresss;
+                                    address_line_2s = St_completeAddresss.Length > 80 ? St_completeAddresss.Substring(40, 40) : St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(40, St_completeAddresss.Length - 40) : "";
+                                    address_line_3s = (St_completeAddresss.Length > 120) ? St_completeAddresss.Substring(80, 40) : "";
+                                    bt_primary_no = ShippingAddressInfo.Phone;
+                                    bt_firstname = ShippingAddressInfo.FirstName;
+                                    bt_lastname = ShippingAddressInfo.LastName;
+
+
+                                    St_completeAddresss = ShippingAddressInfo.Address1 + " " + ShippingAddressInfo.Address2;
+                                    St_address_line_1s = St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(0, 40) : St_completeAddresss;
+                                    St_address_line_2s = St_completeAddresss.Length > 80 ? St_completeAddresss.Substring(40, 40) : St_completeAddresss.Length > 40 ? St_completeAddresss.Substring(40, St_completeAddresss.Length - 40) : "";
+                                    St_address_line_3s = (St_completeAddresss.Length > 120) ? St_completeAddresss.Substring(80, 40) : "";
+                                    st_primary_no = ShippingAddressInfo.Phone;
+                                    st_firstname = ShippingAddressInfo.FirstName;
+                                    st_lastname = ShippingAddressInfo.LastName;
+                                }
 
 
 
                                 PostDocument document = new PostDocument
-                            {
-                                ORIGIN_APPLICATION = "OMNI",
-                                BT_CUID = customePostResponceInfo.Sid,
-                                BT_COUNTRY = BillingAddressInfo.Country,
-                                BT_ADDRESS_LINE1 = address_line_1s,
-                                BT_ADDRESS_LINE2 = address_line_2s,
-                                BT_ADDRESS_LINE3 = address_line_3s,
-                                BT_ADDRESS_LINE4 = "",
-                                BT_ADDRESS_LINE5 = BillingAddressInfo.City,
-                                BT_PRIMARY_PHONE_NO = bt_primary_no,
-                                ST_CUID = customePostResponceInfo.Sid,
-                                ST_COUNTRY = ShippingAddressInfo.Country,
-                                ST_PRIMARY_PHONE_NO =  st_primary_no,
-                                ST_ADDRESS_LINE1 = St_address_line_1s,
-                                ST_ADDRESS_LINE2 = St_address_line_2s,
-                                ST_ADDRESS_LINE3 = St_address_line_3s,
-                                ST_ADDRESS_LINE4 = "",
-                                ST_ADDRESS_LINE5 = ShippingAddressInfo.City,
-                                SUBSIDIARY_UID = storeInfo.SBS_SID,
-                                STORE_SID = storeInfo.SID,
-                                STORE_NO = storeInfo.STORE_NO,
-                                STORE_NAME = storeInfo.STORE_NAME,
-                                NOTES_GENERAL = OrderInfo.Name,
-                                CUSTOMER_PO_NUMBER = CUSTOMER_PO_NUMBER,
-                                UDF_STRING1 = OrderInfo.Id.ToString(),
-                                UDF_STRING2 = "NORM",
-                                UDF_STRING3 = "1",
-                                UDF_STRING4 = "",
-                                UDF_STRING5 = OrderInfo.OrderNumber.ToString(),
-                                ORDER_STATUS = 0,
-                                SEND_SALE_FULFILLMENT = false,
-                                POS_FLAG1 = "ECOM"
-                            };
-
-                            postDocument.Add(document);
-
-                            var documentPostLink = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document";
-                            var documentResponse = RetailProApiCall.Post(documentPostLink, postDocument);
-
-                            if (documentResponse.StatusCode == HttpStatusCode.Created)
-                            {
-                                var docPostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(documentResponse.Content);
-                                var docPostResponceInfo = docPostResponceObject.FirstOrDefault();
-
-                                string itemPostLink = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" +
-                                        docPostResponceInfo.Sid + "/item";
-
-                                postedDocumentSid = docPostResponceInfo.Sid;
-
-                                var docItemPost = RetailProApiCall.Post(itemPostLink, ItemPostInfo);
-                                if (docItemPost.StatusCode == HttpStatusCode.Created)
                                 {
-                                    if (OrderInfo.DiscountCodes.Count > 0)
+                                    ORIGIN_APPLICATION = "OMNI",
+                                    BT_CUID = customePostResponceInfo.Sid,
+                                    BT_COUNTRY = BillingAddressInfo.Country,
+                                    BT_ADDRESS_LINE1 = address_line_1s,
+                                    BT_ADDRESS_LINE2 = address_line_2s,
+                                    BT_ADDRESS_LINE3 = address_line_3s,
+                                    BT_ADDRESS_LINE4 = "",
+                                    BT_ADDRESS_LINE5 = BillingAddressInfo.City,
+                                    BT_PRIMARY_PHONE_NO = BillingAddressInfo.Phone ?? CustomerInfo.Phone,
+                                   BT_FIRST_NAME = bt_firstname,
+                                   BT_LAST_NAME = bt_lastname,
+                                    //ST_CUID = customePostResponceInfo.Sid,
+                                    ST_COUNTRY = ShippingAddressInfo.Country,
+                                    ST_PRIMARY_PHONE_NO = st_primary_no,
+                                    ST_ADDRESS_LINE1 = St_address_line_1s,
+                                    ST_ADDRESS_LINE2 = St_address_line_2s,
+                                    ST_ADDRESS_LINE3 = St_address_line_3s,
+                                    ST_ADDRESS_LINE4 = "",
+                                    ST_ADDRESS_LINE5 = ShippingAddressInfo.City,
+                                    ST_FIRST_NAME = st_firstname,
+                                    ST_LAST_NAME = st_lastname,
+                                    SUBSIDIARY_UID = storeInfo.SBS_SID,
+                                    STORE_SID = storeInfo.SID,
+                                    STORE_NO = storeInfo.STORE_NO,
+                                    STORE_NAME = storeInfo.STORE_NAME,
+                                    NOTES_GENERAL = OrderInfo.Name,
+                                    CUSTOMER_PO_NUMBER = CUSTOMER_PO_NUMBER,
+                                    UDF_STRING1 = OrderInfo.Id.ToString(),
+                                    UDF_STRING2 = "NORM",
+                                    UDF_STRING3 = "1",
+                                    UDF_STRING4 = "",
+                                    UDF_STRING5 = OrderInfo.OrderNumber.ToString(),
+                                    ORDER_STATUS = 0,
+                                    SEND_SALE_FULFILLMENT = false,
+                                    POS_FLAG1 = "ECOM"
+                                };
+
+                                postDocument.Add(document);
+
+                                var documentPostLink = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document";
+                                var documentResponse = RetailProApiCall.Post(documentPostLink, postDocument);
+
+                                if (documentResponse.StatusCode == HttpStatusCode.Created)
+                                {
+                                    var docPostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(documentResponse.Content);
+                                    var docPostResponceInfo = docPostResponceObject.FirstOrDefault();
+
+                                    string itemPostLink = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" +
+                                            docPostResponceInfo.Sid + "/item";
+
+                                    postedDocumentSid = docPostResponceInfo.Sid;
+
+                                    var docItemPost = RetailProApiCall.Post(itemPostLink, ItemPostInfo);
+                                    if (docItemPost.StatusCode == HttpStatusCode.Created)
                                     {
-                                        List<PutOrderDiscount> orderDiscountObject = new List<PutOrderDiscount>();
-                                        orderDiscountObject.Add(new PutOrderDiscount
+                                        if (OrderInfo.DiscountCodes.Count > 0)
                                         {
-                                            MANUAL_ORDER_DISC_TYPE = "2",
-                                            MANUAL_ORDER_DISC_VALUE = OrderInfo.DiscountCodes.FirstOrDefault().Amount,
-                                            MANUAL_DISC_REASON = null,
-                                            MANUAL_ORDER_DISC_REASON = OrderInfo.DiscountCodes.FirstOrDefault().Code
-                                        });
-
-                                        var docRowVersionForDiscount = await RetailProApiCall.GetAsync(ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*");
-                                        docPostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(docRowVersionForDiscount.Content);
-                                        docPostResponceInfo = docPostResponceObject.FirstOrDefault();
-
-                                        var orderDiscountPutUrl = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*&filter=row_version,eq," + docPostResponceInfo.RowVersion;
-                                        var documentDiscountResponce = RetailProApiCall.PUT(orderDiscountPutUrl, orderDiscountObject);
-
-                                    }
-
-                                    if (OrderInfo.ShippingLines.Count() > 0)
-                                    {
-                                        var shippingSidQuery = "SELECT TO_CHAR(SID) FROM RPS.SHIP_METHOD WHERE METHOD = 'Other'";
-                                        var shippinfSid = connection.Query<string>(shippingSidQuery).FirstOrDefault();
-
-                                        List<PutShippingInfo> putShippingInfo = new List<PutShippingInfo>();
-                                       
-                                        putShippingInfo.Add(new PutShippingInfo
-                                        {
-                                            ORDER_SHIP_METHOD_SID = shippinfSid,
-                                            ORDER_SHIPPING_AMT_MANUAL = OrderInfo.ShippingLines.FirstOrDefault().Price
-                                        });
-
-                                        var docRowVersionForShipping = await RetailProApiCall.GetAsync(ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*");
-                                        docPostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(docRowVersionForShipping.Content);
-                                        docPostResponceInfo = docPostResponceObject.FirstOrDefault();
-
-                                        var orderShippingPutUrl = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*&filter=row_version,eq," + docPostResponceInfo.RowVersion;
-                                        var documentDiscountResponce = RetailProApiCall.PUT(orderShippingPutUrl, putShippingInfo);
-                                    }
-
-                                    if (OrderInfo.Gateway != null && OrderInfo.Gateway.Equals("2CO"))
-                                    {
-                                        List<PutTaxInfo> taxInfoObject = new List<PutTaxInfo>();
-                                        taxInfoObject.Add(new PutTaxInfo { TAX_AREA_NAME = "EXEMPT" });
-
-                                        var docRowVersionForShipping = await RetailProApiCall.GetAsync(ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*");
-                                        docPostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(docRowVersionForShipping.Content);
-                                        docPostResponceInfo = docPostResponceObject.FirstOrDefault();
-
-                                        var orderTaxPutUrl = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*&filter=row_version,eq," + docPostResponceInfo.RowVersion;
-                                        var documentDiscountResponce = RetailProApiCall.PUT(orderTaxPutUrl, taxInfoObject);
-                                    }
-
-                                    string docRowVersionLink1 = $"{ConfigurationManager.AppSettings["ServerWebAddress"]}/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*";
-                                    var docRowVersionResponse1 = await RetailProApiCall.GetAsync(docRowVersionLink1);
-                                    docPostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(docRowVersionResponse1.Content);
-                                    docPostResponceInfo = docPostResponceObject.FirstOrDefault();
-
-                                    var soDepositCallLink = $"{ConfigurationManager.AppSettings["ServerWebAddress"]}/v1/rest/document/" +
-                                    docPostResponceInfo.Sid + "?filter=row_version,eq," + docPostResponceInfo.RowVersion;
-
-                                    List<SODeposit> depositRequestList = new List<SODeposit>();
-
-                                    decimal.TryParse(OrderInfo.TotalPrice.ToString(), out decimal totalPrice);
-                                    decimal.TryParse(OrderInfo.TotalOutstanding.ToString(), out decimal totalOutstanding);
-
-                                    decimal SoPaidamount = totalPrice - totalOutstanding;
-
-                                    if (CustomerPoNumber == "COD" && totalPrice == totalOutstanding) //3=COD
-                                    {
-                                        SoPaidamount = 0;
-                                    }
-
-
-                                    if(OrderInfo.PaymentGatewayNames.Contains("Bank Deposit") && totalPrice == totalOutstanding)
-                                    {
-                                        SoPaidamount = totalOutstanding;
-                                    }
-
-
-                                    SODeposit depositRequest = new SODeposit
-                                    {
-                                        tenders = new List<object>(),
-                                        so_deposit_amt_paid = SoPaidamount.ToString()
-                                    };
-
-                                    depositRequestList.Add(depositRequest);
-
-                                    var depositResponse = RetailProApiCall.PUT(soDepositCallLink, depositRequestList);
-
-                                    if (depositResponse.IsSuccessful)
-                                    {
-                                        
-                                    // TENDER
-                                    List<PostTender> tenderPayload = new List<PostTender>();
-                                        if (CustomerPoNumber.ToUpper() == "COD" ) //3=COD
-                                        {
-                                            tenderPayload.Add(new PostTender
+                                            List<PutOrderDiscount> orderDiscountObject = new List<PutOrderDiscount>();
+                                            orderDiscountObject.Add(new PutOrderDiscount
                                             {
-                                                ORIGIN_APPLICATION = "OMNI",
-                                                DOCUMENT_SID = docPostResponceInfo.Sid,
-                                                TAKEN = SoPaidamount.ToString(),
-                                                TENDER_TYPE = "3",
-                                                TENDER_NAME = "COD"
-
+                                                MANUAL_ORDER_DISC_TYPE = "2",
+                                                MANUAL_ORDER_DISC_VALUE = OrderInfo.DiscountCodes.FirstOrDefault().Amount,
+                                                MANUAL_DISC_REASON = null,
+                                                MANUAL_ORDER_DISC_REASON = OrderInfo.DiscountCodes.FirstOrDefault().Code
                                             });
 
+                                            var docRowVersionForDiscount = await RetailProApiCall.GetAsync(ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*");
+                                            docPostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(docRowVersionForDiscount.Content);
+                                            docPostResponceInfo = docPostResponceObject.FirstOrDefault();
+
+                                            var orderDiscountPutUrl = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*&filter=row_version,eq," + docPostResponceInfo.RowVersion;
+                                            var documentDiscountResponce = RetailProApiCall.PUT(orderDiscountPutUrl, orderDiscountObject);
+
                                         }
-                                        else if (CustomerPoNumber.ToUpper() == "GIFT CARD") //10=GiftCard
+
+                                        if (OrderInfo.ShippingLines.Count() > 0)
                                         {
-                                            tenderPayload.Add(new PostTender
+                                            var shippingSidQuery = "SELECT TO_CHAR(SID) FROM RPS.SHIP_METHOD WHERE METHOD = 'Other'";
+                                            var shippinfSid = connection.Query<string>(shippingSidQuery).FirstOrDefault();
+
+                                            List<PutShippingInfo> putShippingInfo = new List<PutShippingInfo>();
+
+                                            putShippingInfo.Add(new PutShippingInfo
                                             {
-                                                ORIGIN_APPLICATION = "OMNI",
-                                                DOCUMENT_SID = docPostResponceInfo.Sid,
-                                                TAKEN = SoPaidamount.ToString(),
-                                                TENDER_TYPE = "10",
-                                                TENDER_NAME = "Gift Card"
+                                                ORDER_SHIP_METHOD_SID = shippinfSid,
+                                                ORDER_SHIPPING_AMT_MANUAL = OrderInfo.ShippingLines.FirstOrDefault().Price
                                             });
 
+                                            var docRowVersionForShipping = await RetailProApiCall.GetAsync(ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*");
+                                            docPostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(docRowVersionForShipping.Content);
+                                            docPostResponceInfo = docPostResponceObject.FirstOrDefault();
+
+                                            var orderShippingPutUrl = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*&filter=row_version,eq," + docPostResponceInfo.RowVersion;
+                                            var documentDiscountResponce = RetailProApiCall.PUT(orderShippingPutUrl, putShippingInfo);
                                         }
-                                        else if (OrderInfo.PaymentGatewayNames.Contains("Bank Deposit")) //10=GiftCard
+
+                                        if (OrderInfo.Gateway != null && OrderInfo.Gateway.Equals("2CO"))
                                         {
-                                            tenderPayload.Add(new PostTender
-                                            {
-                                                ORIGIN_APPLICATION = "OMNI",
-                                                DOCUMENT_SID = docPostResponceInfo.Sid,
-                                                TAKEN = SoPaidamount.ToString(),
-                                                TENDER_TYPE = "2",
-                                                TENDER_NAME = "B Deposit"
-                                            });
+                                            List<PutTaxInfo> taxInfoObject = new List<PutTaxInfo>();
+                                            taxInfoObject.Add(new PutTaxInfo { TAX_AREA_NAME = "EXEMPT" });
 
-                                        }
-                                        else if (CustomerPoNumber.ToUpper() == "PAID") //2=CreditCard
-                                        {
-                                            var TenderName = "Credit Card";
+                                            var docRowVersionForShipping = await RetailProApiCall.GetAsync(ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*");
+                                            docPostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(docRowVersionForShipping.Content);
+                                            docPostResponceInfo = docPostResponceObject.FirstOrDefault();
 
-                                            if (OrderInfo.PaymentGatewayNames.FirstOrDefault().Contains("BaadMay") || OrderInfo.PaymentGatewayNames.FirstOrDefault().Contains("Pay Later"))
-                                                TenderName = "BNPL";
-
-                                            if (OrderInfo.PaymentGatewayNames.FirstOrDefault().Contains("bank_alfalah_mpgs_payment_gateway_all_master_visa_cards_are_accepted_"))
-                                                TenderName = "BAF";
-
-                                            tenderPayload.Add(new PostTender
-                                            {
-                                                ORIGIN_APPLICATION = "OMNI",
-                                                DOCUMENT_SID = docPostResponceInfo.Sid,
-                                                TAKEN = SoPaidamount.ToString(),
-                                                TENDER_TYPE = "2",
-                                                TENDER_NAME = TenderName
-                                            });
-
-                                        }
-                                      
-
-                                        if (SoPaidamount > 0)
-                                        {
-                                            string docTenderLink = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "/tender";
-                                            var tenderResponse = RetailProApiCall.Post(docTenderLink, tenderPayload);
+                                            var orderTaxPutUrl = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*&filter=row_version,eq," + docPostResponceInfo.RowVersion;
+                                            var documentDiscountResponce = RetailProApiCall.PUT(orderTaxPutUrl, taxInfoObject);
                                         }
 
-                                        string docRowVersionLink =
-                                                ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*";
-                                        var docRowVersionResponse = await RetailProApiCall.GetAsync(docRowVersionLink);
-                                        docPostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(docRowVersionResponse.Content);
+                                        string docRowVersionLink1 = $"{ConfigurationManager.AppSettings["ServerWebAddress"]}/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*";
+                                        var docRowVersionResponse1 = await RetailProApiCall.GetAsync(docRowVersionLink1);
+                                        docPostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(docRowVersionResponse1.Content);
                                         docPostResponceInfo = docPostResponceObject.FirstOrDefault();
 
-                                        string documentStatusLink = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" +
-                                            docPostResponceInfo.Sid + "?filter=ROW_VERSION,eq," + docPostResponceInfo.RowVersion;
+                                        var soDepositCallLink = $"{ConfigurationManager.AppSettings["ServerWebAddress"]}/v1/rest/document/" +
+                                        docPostResponceInfo.Sid + "?filter=row_version,eq," + docPostResponceInfo.RowVersion;
 
-                                        List<OrderStatusPut> orderStatusPuts = new List<OrderStatusPut>
+                                        List<SODeposit> depositRequestList = new List<SODeposit>();
+
+                                        decimal.TryParse(OrderInfo.TotalPrice.ToString(), out decimal totalPrice);
+                                        decimal.TryParse(OrderInfo.TotalOutstanding.ToString(), out decimal totalOutstanding);
+
+                                        decimal SoPaidamount = totalPrice - totalOutstanding;
+
+                                        if (CustomerPoNumber == "COD" && totalPrice == totalOutstanding) //3=COD
+                                        {
+                                            SoPaidamount = 0;
+                                        }
+
+
+                                        if (OrderInfo.PaymentGatewayNames.Contains("Bank Deposit") && totalPrice == totalOutstanding)
+                                        {
+                                            SoPaidamount = totalOutstanding;
+                                        }
+
+
+                                        SODeposit depositRequest = new SODeposit
+                                        {
+                                            tenders = new List<object>(),
+                                            so_deposit_amt_paid = SoPaidamount.ToString()
+                                        };
+
+                                        depositRequestList.Add(depositRequest);
+
+                                        var depositResponse = RetailProApiCall.PUT(soDepositCallLink, depositRequestList);
+
+                                        if (depositResponse.IsSuccessful)
+                                        {
+
+                                            // TENDER
+                                            List<PostTender> tenderPayload = new List<PostTender>();
+                                            if (CustomerPoNumber.ToUpper() == "COD") //3=COD
+                                            {
+                                                tenderPayload.Add(new PostTender
+                                                {
+                                                    ORIGIN_APPLICATION = "OMNI",
+                                                    DOCUMENT_SID = docPostResponceInfo.Sid,
+                                                    TAKEN = SoPaidamount.ToString(),
+                                                    TENDER_TYPE = "3",
+                                                    TENDER_NAME = "COD"
+
+                                                });
+
+                                            }
+                                            else if (CustomerPoNumber.ToUpper() == "GIFT CARD") //10=GiftCard
+                                            {
+                                                tenderPayload.Add(new PostTender
+                                                {
+                                                    ORIGIN_APPLICATION = "OMNI",
+                                                    DOCUMENT_SID = docPostResponceInfo.Sid,
+                                                    TAKEN = SoPaidamount.ToString(),
+                                                    TENDER_TYPE = "10",
+                                                    TENDER_NAME = "Gift Card"
+                                                });
+
+                                            }
+                                            else if (OrderInfo.PaymentGatewayNames.Contains("Bank Deposit")) //10=GiftCard
+                                            {
+                                                tenderPayload.Add(new PostTender
+                                                {
+                                                    ORIGIN_APPLICATION = "OMNI",
+                                                    DOCUMENT_SID = docPostResponceInfo.Sid,
+                                                    TAKEN = SoPaidamount.ToString(),
+                                                    TENDER_TYPE = "2",
+                                                    TENDER_NAME = "B Deposit"
+                                                });
+
+                                            }
+                                            else if (CustomerPoNumber.ToUpper() == "PAID") //2=CreditCard
+                                            {
+                                                var TenderName = "Credit Card";
+
+                                                if (OrderInfo.PaymentGatewayNames.FirstOrDefault().Contains("BaadMay") || OrderInfo.PaymentGatewayNames.FirstOrDefault().Contains("Pay Later"))
+                                                    TenderName = "BNPL";
+
+                                                if (OrderInfo.PaymentGatewayNames.FirstOrDefault().Contains("bank_alfalah_mpgs_payment_gateway_all_master_visa_cards_are_accepted_"))
+                                                    TenderName = "BAF";
+
+                                                tenderPayload.Add(new PostTender
+                                                {
+                                                    ORIGIN_APPLICATION = "OMNI",
+                                                    DOCUMENT_SID = docPostResponceInfo.Sid,
+                                                    TAKEN = SoPaidamount.ToString(),
+                                                    TENDER_TYPE = "2",
+                                                    TENDER_NAME = TenderName
+                                                });
+
+                                            }
+
+
+                                            if (SoPaidamount > 0)
+                                            {
+                                                string docTenderLink = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "/tender";
+                                                var tenderResponse = RetailProApiCall.Post(docTenderLink, tenderPayload);
+                                            }
+
+                                            string docRowVersionLink =
+                                                    ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" + docPostResponceInfo.Sid + "?cols=*";
+                                            var docRowVersionResponse = await RetailProApiCall.GetAsync(docRowVersionLink);
+                                            docPostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(docRowVersionResponse.Content);
+                                            docPostResponceInfo = docPostResponceObject.FirstOrDefault();
+
+                                            string documentStatusLink = ConfigurationManager.AppSettings["ServerWebAddress"] + "/v1/rest/document/" +
+                                                docPostResponceInfo.Sid + "?filter=ROW_VERSION,eq," + docPostResponceInfo.RowVersion;
+
+                                            List<OrderStatusPut> orderStatusPuts = new List<OrderStatusPut>
                                         {
                                             new OrderStatusPut
                                             {
@@ -758,19 +787,29 @@ namespace JULKE
                                             }
                                         };
 
-                                        var documentStatusResponce = RetailProApiCall.PUT(documentStatusLink, orderStatusPuts);
-                                        docPostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(documentStatusResponce.Content);
-                                        docPostResponceInfo = docPostResponceObject.FirstOrDefault();
+                                            var documentStatusResponce = RetailProApiCall.PUT(documentStatusLink, orderStatusPuts);
+                                            docPostResponceObject = JsonConvert.DeserializeObject<List<PostResponceObject>>(documentStatusResponce.Content);
+                                            docPostResponceInfo = docPostResponceObject.FirstOrDefault();
 
-                                        logDocument = new BsonDocument { { "event", "Document Posted" }, { "document_id", OrderInfo.Name }, { "message", "Document Posted Sucessfully" }, { "event_time_date", DateTime.Now } };
-                                        logCollection.InsertOne(logDocument);
-                                        return postedDocumentSid;
+                                            logDocument = new BsonDocument { { "event", "Document Posted" }, { "document_id", OrderInfo.Name }, { "message", "Document Posted Sucessfully" }, { "event_time_date", DateTime.Now } };
+                                            logCollection.InsertOne(logDocument);
+                                            return postedDocumentSid;
+                                        }
+                                        else
+                                        {
+                                            var filter = Builders<BsonDocument>.Filter.Eq("document_id", OrderInfo.Name);
+                                            var options = new ReplaceOptions { IsUpsert = true };
+                                            logDocument = new BsonDocument { { "event", "Document Deport Post" }, { "document_id", OrderInfo.Name }, { "message", "Document Items failed to post in RetailPro " + depositResponse.Content }, { "event_time_date", DateTime.Now } };
+                                            logCollection.ReplaceOne(filter, logDocument, options);
+
+                                            return "Error";
+                                        }
                                     }
                                     else
                                     {
                                         var filter = Builders<BsonDocument>.Filter.Eq("document_id", OrderInfo.Name);
                                         var options = new ReplaceOptions { IsUpsert = true };
-                                        logDocument = new BsonDocument { { "event", "Document Deport Post" }, { "document_id", OrderInfo.Name }, { "message", "Document Items failed to post in RetailPro " + depositResponse.Content }, { "event_time_date", DateTime.Now } };
+                                        logDocument = new BsonDocument { { "event", "Document Item Post" }, { "document_id", OrderInfo.Name }, { "message", "Document Items failed to post in RetailPro " + docItemPost.Content }, { "event_time_date", DateTime.Now } };
                                         logCollection.ReplaceOne(filter, logDocument, options);
 
                                         return "Error";
@@ -780,29 +819,29 @@ namespace JULKE
                                 {
                                     var filter = Builders<BsonDocument>.Filter.Eq("document_id", OrderInfo.Name);
                                     var options = new ReplaceOptions { IsUpsert = true };
-                                    logDocument = new BsonDocument { { "event", "Document Item Post" }, { "document_id", OrderInfo.Name }, { "message", "Document Items failed to post in RetailPro " + docItemPost.Content }, { "event_time_date", DateTime.Now } };
+                                    logDocument = new BsonDocument { { "event", "Document Post" }, { "document_id", OrderInfo.Name }, { "message", "Document failed to post in RetailPro " + documentResponse.Content }, { "event_time_date", DateTime.Now } };
                                     logCollection.ReplaceOne(filter, logDocument, options);
 
                                     return "Error";
                                 }
+
+                                #endregion
                             }
                             else
                             {
                                 var filter = Builders<BsonDocument>.Filter.Eq("document_id", OrderInfo.Name);
                                 var options = new ReplaceOptions { IsUpsert = true };
-                                logDocument = new BsonDocument { { "event", "Document Post" }, { "document_id", OrderInfo.Name }, { "message", "Document failed to post in RetailPro " + documentResponse.Content }, { "event_time_date", DateTime.Now } };
+                                logDocument = new BsonDocument { { "event", "Customer Search" }, { "document_id", OrderInfo.Name }, { "message", "Customer Phone Number not found in original Order" }, { "event_time_date", DateTime.Now } };
                                 logCollection.ReplaceOne(filter, logDocument, options);
 
                                 return "Error";
                             }
-
-                            #endregion
                         }
                         else
                         {
                             var filter = Builders<BsonDocument>.Filter.Eq("document_id", OrderInfo.Name);
                             var options = new ReplaceOptions { IsUpsert = true };
-                            logDocument = new BsonDocument { { "event", "Customer Search" }, { "document_id", OrderInfo.Name }, { "message", "Customer Phone Number not found in original Order" }, { "event_time_date", DateTime.Now } };
+                            logDocument = new BsonDocument { { "event", "Customer Search" }, { "document_id", OrderInfo.Name }, { "message", "Customer Name not found in original Order" }, { "event_time_date", DateTime.Now } };
                             logCollection.ReplaceOne(filter, logDocument, options);
 
                             return "Error";

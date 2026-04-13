@@ -1,0 +1,346 @@
+{
+  "id": 6963594395936,
+  "admin_graphql_api_id": "gid://shopify/Order/6963594395936",
+  "app_id": 1354745,
+  "browser_ip": "173.212.226.207",
+  "buyer_accepts_marketing": false,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": null,
+  "checkout_id": 40732751266080,
+  "checkout_token": "167bcb0e1d619eef6499aed6ab7c1219",
+  "client_details": {
+    "accept_language": null,
+    "browser_height": null,
+    "browser_ip": "173.212.226.207",
+    "browser_width": null,
+    "session_hash": null,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+  },
+  "closed_at": null,
+  "company": null,
+  "confirmation_number": "UMKDZ6QLQ",
+  "confirmed": true,
+  "contact_email": "rimsha@gmail.com",
+  "created_at": "2026-04-03T16:57:24+05:00",
+  "currency": "PKR",
+  "current_subtotal_price": "10.00",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "10.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "10.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "0.00",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "10.00",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "10.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "10.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_tax": "0.00",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "customer_locale": "en-PK",
+  "device_id": null,
+  "discount_codes": [],
+  "duties_included": false,
+  "email": "rimsha@gmail.com",
+  "estimated_taxes": false,
+  "financial_status": "pending",
+  "fulfillment_status": null,
+  "landing_site": null,
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_business_entity_id": "28910027040",
+  "merchant_of_record_app_id": null,
+  "name": "90001242",
+  "note": null,
+  "note_attributes": [],
+  "number": 242,
+  "order_number": 1242,
+  "order_status_url": "https://omniconnect-taar.myshopify.com/95403508000/orders/d9de4181e4215352c35b5d2d48c2a568/authenticate?key=59378f8dc5e9601b18a410d6b40d8313",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": [],
+  "phone": "+923096760294",
+  "po_number": null,
+  "presentment_currency": "PKR",
+  "processed_at": "2026-04-03T16:57:24+05:00",
+  "reference": null,
+  "referring_site": null,
+  "source_identifier": null,
+  "source_name": "shopify_draft_order",
+  "source_url": null,
+  "subtotal_price": "10.00",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "10.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "10.00",
+      "currency_code": "PKR"
+    }
+  },
+  "tags": "",
+  "tax_exempt": false,
+  "tax_lines": [],
+  "taxes_included": false,
+  "test": false,
+  "token": "d9de4181e4215352c35b5d2d48c2a568",
+  "total_cash_rounding_payment_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_cash_rounding_refund_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_discounts": "0.00",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_line_items_price": "10.00",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "10.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "10.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_outstanding": "10.00",
+  "total_price": "10.00",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "10.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "10.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tax": "0.00",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 0,
+  "updated_at": "2026-04-03T16:58:25+05:00",
+  "user_id": 121004982560,
+  "billing_address": {
+    "first_name": "ahmad",
+    "address1": "Mughalmanzil",
+    "phone": "03096760294",
+    "city": "Lahore",
+    "zip": "74400",
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "mughal",
+    "address2": "12",
+    "company": null,
+    "latitude": 31.5203696,
+    "longitude": 74.35874729999999,
+    "name": "ahmad mughal",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "customer": {
+    "id": 9062681149728,
+    "created_at": "2025-06-24T11:09:30+05:00",
+    "updated_at": "2026-04-03T16:57:25+05:00",
+    "first_name": "ahmad",
+    "last_name": "mughal",
+    "state": "disabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "email_marketing_consent": {
+      "state": "not_subscribed",
+      "opt_in_level": "single_opt_in",
+      "consent_updated_at": null
+    },
+    "sms_marketing_consent": {
+      "state": "not_subscribed",
+      "opt_in_level": "single_opt_in",
+      "consent_updated_at": null,
+      "consent_collected_from": null
+    },
+    "tags": "",
+    "email": "rimsha@gmail.com",
+    "phone": "+923096760294",
+    "currency": "PKR",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/9062681149728",
+    "default_address": {
+      "id": 11432592179488,
+      "customer_id": 9062681149728,
+      "first_name": "ahmad",
+      "last_name": "mughal",
+      "company": null,
+      "address1": "Mughalmanzil",
+      "address2": "12",
+      "city": "Lahore",
+      "province": null,
+      "country": "Pakistan",
+      "zip": "74400",
+      "phone": "03096760294",
+      "name": "ahmad mughal",
+      "province_code": null,
+      "country_code": "PK",
+      "country_name": "Pakistan",
+      "default": true
+    }
+  },
+  "discount_applications": [],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 16899641704736,
+      "admin_graphql_api_id": "gid://shopify/LineItem/16899641704736",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 0,
+      "name": "000132 - POLISHABLE LEATHER WAX - MIX / 000",
+      "price": "10.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "10.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "10.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 10009500582176,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000003519",
+      "taxable": true,
+      "title": "000132 - POLISHABLE LEATHER WAX",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 50496300187936,
+      "variant_inventory_management": "shopify",
+      "variant_title": "MIX / 000",
+      "vendor": "OmniConnect-Taar",
+      "tax_lines": [],
+      "duties": [],
+      "discount_allocations": []
+    }
+  ],
+  "payment_terms": {
+    "id": 45711098144,
+    "created_at": "2026-04-03T16:57:25+05:00",
+    "due_in_days": null,
+    "payment_schedules": [],
+    "payment_terms_name": "Due on receipt",
+    "payment_terms_type": "receipt",
+    "updated_at": "2026-04-03T16:57:25+05:00"
+  },
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "ahmad",
+    "address1": "Mughalmanzil",
+    "phone": "03096760294",
+    "city": "Lahore",
+    "zip": "74400",
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "mughal",
+    "address2": "12",
+    "company": null,
+    "latitude": 31.5203696,
+    "longitude": 74.35874729999999,
+    "name": "ahmad mughal",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "shipping_lines": []
+}

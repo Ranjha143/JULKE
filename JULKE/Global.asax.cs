@@ -79,11 +79,12 @@ namespace JULKE
         public static bool Shopify_FulfilmentInProgress { get; set; }
         public static bool Data_SyncService_InProgress { get; set; }
 #if DEBUG
-        public static string MongoConnectionString { get; set; } = "mongodb://localhost:27017/";
+        public static string MongoConnectionString { get; set; } = $"{ConfigurationManager.AppSettings["MongoConnectionString"]}";
 
 #endif
 #if !DEBUG
-  public static string MongoConnectionString { get; set; } = "mongodb://admin:QndD7LgjOENy@185.197.250.149:27017/?authSource=admin";
+  //public static string MongoConnectionString { get; set; } = "mongodb://admin:QndD7LgjOENy@185.197.250.149:27017/?authSource=admin";
+  public static string MongoConnectionString { get; set; } = $"{ConfigurationManager.AppSettings["MongoConnectionString"]}";
 
 #endif
 
