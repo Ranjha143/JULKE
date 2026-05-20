@@ -1,0 +1,602 @@
+{
+  "id": 6976392167703,
+  "admin_graphql_api_id": "gid://shopify/Order/6976392167703",
+  "app_id": 1354745,
+  "browser_ip": "202.69.35.51",
+  "buyer_accepts_marketing": true,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": null,
+  "checkout_id": 40887109091607,
+  "checkout_token": "435cc6ba03ff5a9a4c24a6803f68bf63",
+  "client_details": {
+    "accept_language": null,
+    "browser_height": null,
+    "browser_ip": "202.69.35.51",
+    "browser_width": null,
+    "session_hash": null,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+  },
+  "closed_at": null,
+  "company": null,
+  "confirmation_number": "ZHG3Q6MYP",
+  "confirmed": true,
+  "contact_email": "nabskhan@gmail.com",
+  "created_at": "2026-05-07T10:45:06+05:00",
+  "currency": "PKR",
+  "current_subtotal_price": "18795.00",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "18795.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "18795.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "0.00",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "21795.00",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "21795.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "21795.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_tax": "2867.03",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "2867.03",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "2867.03",
+      "currency_code": "PKR"
+    }
+  },
+  "customer_locale": "en-CA",
+  "device_id": null,
+  "discount_codes": [],
+  "duties_included": false,
+  "email": "nabskhan@gmail.com",
+  "estimated_taxes": false,
+  "financial_status": "paid",
+  "fulfillment_status": null,
+  "landing_site": null,
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_business_entity_id": "MTExMjQ4NDYy",
+  "merchant_of_record_app_id": null,
+  "name": "100087811",
+  "note": "",
+  "note_attributes": [],
+  "number": 86811,
+  "order_number": 87811,
+  "order_status_url": "https://www.julke.pk/11248462/orders/6ee9af6c8c0fe6614aa3bbaf0fd2bcde/authenticate?key=003167be9bb45d933af92f4ebf35b272",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": [
+    "Bank Deposit"
+  ],
+  "phone": null,
+  "po_number": null,
+  "presentment_currency": "PKR",
+  "processed_at": "2026-05-07T10:45:05+05:00",
+  "reference": null,
+  "referring_site": null,
+  "source_identifier": null,
+  "source_name": "shopify_draft_order",
+  "source_url": null,
+  "subtotal_price": "18795.00",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "18795.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "18795.00",
+      "currency_code": "PKR"
+    }
+  },
+  "tags": "Order Created",
+  "tax_exempt": false,
+  "tax_lines": [
+    {
+      "price": "2867.03",
+      "rate": 0.18,
+      "title": "GST",
+      "price_set": {
+        "shop_money": {
+          "amount": "2867.03",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "2867.03",
+          "currency_code": "PKR"
+        }
+      },
+      "channel_liable": false
+    }
+  ],
+  "taxes_included": true,
+  "test": false,
+  "token": "6ee9af6c8c0fe6614aa3bbaf0fd2bcde",
+  "total_cash_rounding_payment_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_cash_rounding_refund_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_discounts": "0.00",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_line_items_price": "18795.00",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "18795.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "18795.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_outstanding": "0.00",
+  "total_price": "21795.00",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "21795.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "21795.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "3000.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "3000.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tax": "2867.03",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "2867.03",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "2867.03",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 15000,
+  "updated_at": "2026-05-07T10:45:16+05:00",
+  "user_id": 40721580118,
+  "billing_address": {
+    "first_name": "Mirza Kamran",
+    "address1": "Alma 1, Emaar Canyon view",
+    "phone": "03251056567",
+    "city": "Islamabad",
+    "zip": null,
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Ali khan",
+    "address2": "Villa 14",
+    "company": null,
+    "latitude": 33.5250985,
+    "longitude": 73.1881047,
+    "name": "Mirza Kamran Ali khan",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "customer": {
+    "id": 9582832156951,
+    "created_at": "2026-04-29T13:49:04+05:00",
+    "updated_at": "2026-05-07T10:45:06+05:00",
+    "first_name": "Mirza Kamran",
+    "last_name": "Ali khan",
+    "state": "disabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "email_marketing_consent": {
+      "state": "subscribed",
+      "opt_in_level": "single_opt_in",
+      "consent_updated_at": "2026-04-29T13:49:06+05:00"
+    },
+    "sms_marketing_consent": null,
+    "tags": "",
+    "email": "nabskhan@gmail.com",
+    "phone": null,
+    "currency": "PKR",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/9582832156951",
+    "default_address": {
+      "id": 11581888135447,
+      "customer_id": 9582832156951,
+      "first_name": "Mirza Kamran",
+      "last_name": "Ali khan",
+      "company": null,
+      "address1": "Alma 1, Emaar Canyon view",
+      "address2": "Villa 14",
+      "city": "Islamabad",
+      "province": null,
+      "country": "Pakistan",
+      "zip": null,
+      "phone": "03251056567",
+      "name": "Mirza Kamran Ali khan",
+      "province_code": null,
+      "country_code": "PK",
+      "country_name": "Pakistan",
+      "default": true
+    }
+  },
+  "discount_applications": [],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 17833280373015,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17833280373015",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 4500,
+      "name": "Vega - Celestial Glow / 42",
+      "price": "3000.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "3000.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "3000.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 8117631713559,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000002338",
+      "taxable": true,
+      "title": "Vega",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 44449509966103,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Celestial Glow / 42",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "457.62",
+          "price_set": {
+            "shop_money": {
+              "amount": "457.62",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "457.62",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    },
+    {
+      "id": 17833280405783,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17833280405783",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 4500,
+      "name": "Vega - Everglow / 41",
+      "price": "3000.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "3000.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "3000.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 8117631713559,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000002344",
+      "taxable": true,
+      "title": "Vega",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 44449510162711,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Everglow / 41",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "457.63",
+          "price_set": {
+            "shop_money": {
+              "amount": "457.63",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "457.63",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    },
+    {
+      "id": 17833280438551,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17833280438551",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 1500,
+      "name": "Fox - Frost Blue",
+      "price": "8720.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "8720.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "8720.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 9666373353751,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000003221",
+      "taxable": true,
+      "title": "Fox",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 49623168712983,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Frost Blue",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "1330.17",
+          "price_set": {
+            "shop_money": {
+              "amount": "1330.17",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "1330.17",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    },
+    {
+      "id": 17833280471319,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17833280471319",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 4500,
+      "name": "Edna - Dandelion / 41",
+      "price": "4075.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "4075.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "4075.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 8392119550231,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000000695",
+      "taxable": true,
+      "title": "Edna",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 45459927892247,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Dandelion / 41",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "621.61",
+          "price_set": {
+            "shop_money": {
+              "amount": "621.61",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "621.61",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": []
+    }
+  ],
+  "payment_terms": null,
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Mirza Kamran",
+    "address1": "Alma 1, Emaar Canyon view",
+    "phone": "03251056567",
+    "city": "Islamabad",
+    "zip": null,
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Ali khan",
+    "address2": "Villa 14",
+    "company": null,
+    "latitude": 33.5250985,
+    "longitude": 73.1881047,
+    "name": "Mirza Kamran Ali khan",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "shipping_lines": [
+    {
+      "id": 5497987858711,
+      "carrier_identifier": null,
+      "code": "custom",
+      "discounted_price": "3000.00",
+      "discounted_price_set": {
+        "shop_money": {
+          "amount": "3000.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "3000.00",
+          "currency_code": "PKR"
+        }
+      },
+      "is_removed": false,
+      "phone": null,
+      "price": "3000.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "3000.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "3000.00",
+          "currency_code": "PKR"
+        }
+      },
+      "requested_fulfillment_service_id": null,
+      "source": "shopify",
+      "title": "TCS charges",
+      "tax_lines": [],
+      "discount_allocations": []
+    }
+  ]
+}

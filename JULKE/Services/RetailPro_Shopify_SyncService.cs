@@ -83,6 +83,7 @@ namespace JULKE
                 var orderCollection = database.GetCollection<BsonDocument>("Orders");
 
                 IDbConnection connection = new OracleConnection(AppVariables.ConnectionString);
+               // var filterQuery = "{name:{$in:['100087808','100087809']}}";
                 var filterQuery = "{'isPosted':false, 'hasError':false}";
                // var filterQuery = "{'name':'100086016'}";
 
@@ -182,7 +183,7 @@ namespace JULKE
                     var storeInfoQuery = $"Select SID,STORE_NAME, STORE_CODE, STORE_NO, ACTIVE_PRICE_LVL_SID, SBS_SID from Rps.Store where store_no = {ConfigurationManager.AppSettings["StoreNo"].ToString()}";
                     var storeInfo = connection.Query<StoreInfo>(storeInfoQuery).FirstOrDefault();
 
-                    var OrderValidaterQuery = $"Select To_Char(SID) from Rps.Document where NOTES_GENERAL = '{OrderInfo.Name}'";
+                    var OrderValidaterQuery = $"Select To_Char(SID) from Rps.Document where NOTES_GENERAL = '{OrderInfo.Name}' and status = 4";
 
                     var ExistingOrder = connection.Query<string>(OrderValidaterQuery).FirstOrDefault();
 
@@ -353,7 +354,7 @@ namespace JULKE
                                     customer.phones.Add(new Phone
                                     {
                                         origin_application = "OMNI",
-                                        phone_no = CustomerInfo.Phone != null ? CustomerInfo.Phone : BillingAddressInfo.Phone,
+                                        phone_no = CustomerInfo.Phone != null ? CustomerInfo.Phone : BillingAddressInfo.Phone != null ? BillingAddressInfo.Phone : ShippingAddressInfo.Phone != null ? ShippingAddressInfo.Phone : null,
                                         primary_flag = true,
                                         seq_no = 1,
                                     });
@@ -446,14 +447,15 @@ namespace JULKE
                                 {
                                     CustomerPoNumber = "Gift Card";
                                 }
-                                else if (!OrderInfo.PaymentGatewayNames.Any(g => g.ToUpper().Contains("COD")) && !OrderInfo.PaymentGatewayNames.Contains("Gift Card"))
-                                {
-                                    CustomerPoNumber = "Paid";
-                                }
                                 else if (OrderInfo.PaymentGatewayNames.Contains("Bank Deposit"))
                                 {
                                     CustomerPoNumber = "Paid";
                                 }
+                                else if (!OrderInfo.PaymentGatewayNames.Any(g => g.ToUpper().Contains("COD")) && !OrderInfo.PaymentGatewayNames.Contains("Gift Card"))
+                                {
+                                    CustomerPoNumber = "Paid";
+                                }
+                              
 
                                 List<PostDocument> postDocument = new List<PostDocument>();
 

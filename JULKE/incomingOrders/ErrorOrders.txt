@@ -1,0 +1,1008 @@
+{
+  "id": 6976328728855,
+  "admin_graphql_api_id": "gid://shopify/Order/6976328728855",
+  "app_id": 1354745,
+  "browser_ip": "202.69.35.51",
+  "buyer_accepts_marketing": false,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": null,
+  "checkout_id": 40886986539287,
+  "checkout_token": "c4540ed957894a4a11a4619b63a63b17",
+  "client_details": {
+    "accept_language": null,
+    "browser_height": null,
+    "browser_ip": "202.69.35.51",
+    "browser_width": null,
+    "session_hash": null,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+  },
+  "closed_at": null,
+  "company": null,
+  "confirmation_number": "7TYZGWANP",
+  "confirmed": true,
+  "contact_email": "knitwear@gmail.com",
+  "created_at": "2026-05-07T09:55:58+05:00",
+  "currency": "PKR",
+  "current_subtotal_price": "36975.00",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "36975.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "36975.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "5055.00",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "5055.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "5055.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "36975.00",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "36975.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "36975.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_tax": "5640.25",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "5640.25",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "5640.25",
+      "currency_code": "PKR"
+    }
+  },
+  "customer_locale": "en",
+  "device_id": null,
+  "discount_codes": [
+    {
+      "code": "Dept discount",
+      "amount": "5055.00",
+      "type": "fixed_amount"
+    }
+  ],
+  "duties_included": false,
+  "email": "knitwear@gmail.com",
+  "estimated_taxes": false,
+  "financial_status": "pending",
+  "fulfillment_status": null,
+  "landing_site": null,
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_business_entity_id": "MTExMjQ4NDYy",
+  "merchant_of_record_app_id": null,
+  "name": "100087808",
+  "note": "Gift to Felmas suppliers as per communication with Shahbaz Sb (Workwear dept)- order punched on Knitwear account",
+  "note_attributes": [],
+  "number": 86808,
+  "order_number": 87808,
+  "order_status_url": "https://www.julke.pk/11248462/orders/861a2c204a40ad8ea96663f990f6cd21/authenticate?key=b5163486aa761c80b1d1b2d008b5e4bf",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": [],
+  "phone": null,
+  "po_number": null,
+  "presentment_currency": "PKR",
+  "processed_at": "2026-05-07T09:55:57+05:00",
+  "reference": null,
+  "referring_site": null,
+  "source_identifier": null,
+  "source_name": "shopify_draft_order",
+  "source_url": null,
+  "subtotal_price": "36975.00",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "36975.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "36975.00",
+      "currency_code": "PKR"
+    }
+  },
+  "tags": "Order Created",
+  "tax_exempt": false,
+  "tax_lines": [
+    {
+      "price": "5640.25",
+      "rate": 0.18,
+      "title": "GST",
+      "price_set": {
+        "shop_money": {
+          "amount": "5640.25",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "5640.25",
+          "currency_code": "PKR"
+        }
+      },
+      "channel_liable": false
+    }
+  ],
+  "taxes_included": true,
+  "test": false,
+  "token": "861a2c204a40ad8ea96663f990f6cd21",
+  "total_cash_rounding_payment_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_cash_rounding_refund_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_discounts": "5055.00",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "5055.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "5055.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_line_items_price": "42030.00",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "42030.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "42030.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_outstanding": "36975.00",
+  "total_price": "36975.00",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "36975.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "36975.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tax": "5640.25",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "5640.25",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "5640.25",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 14500,
+  "updated_at": "2026-05-07T10:23:20+05:00",
+  "user_id": 40721580118,
+  "billing_address": {
+    "first_name": "Leathertex Gloving",
+    "address1": "29th KM ferozepur road",
+    "phone": "+92 320 2958553",
+    "city": "Lahore",
+    "zip": "54000",
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Private Limited (NTN No.0683679)",
+    "address2": null,
+    "company": "Leathertex",
+    "latitude": 31.5244928,
+    "longitude": 74.3234691,
+    "name": "Leathertex Gloving Private Limited (NTN No.0683679)",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "customer": {
+    "id": 3560425095254,
+    "created_at": "2020-09-10T15:33:48+05:00",
+    "updated_at": "2026-05-07T09:55:58+05:00",
+    "first_name": "Leathertex",
+    "last_name": "Knitwear",
+    "state": "disabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "email_marketing_consent": {
+      "state": "not_subscribed",
+      "opt_in_level": "single_opt_in",
+      "consent_updated_at": null
+    },
+    "sms_marketing_consent": null,
+    "tags": "RFM Group Soulmate, RFM Score 555",
+    "email": "knitwear@gmail.com",
+    "phone": null,
+    "currency": "PKR",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/3560425095254",
+    "default_address": {
+      "id": 11490364490007,
+      "customer_id": 3560425095254,
+      "first_name": "Leathertex Gloving",
+      "last_name": "Private Limited (NTN No.0683679)",
+      "company": "Leathertex",
+      "address1": "29th KM ferozepur road",
+      "address2": null,
+      "city": "Lahore",
+      "province": null,
+      "country": "Pakistan",
+      "zip": "54000",
+      "phone": "+92 320 2958553",
+      "name": "Leathertex Gloving Private Limited (NTN No.0683679)",
+      "province_code": null,
+      "country_code": "PK",
+      "country_name": "Pakistan",
+      "default": true
+    }
+  },
+  "discount_applications": [
+    {
+      "target_type": "line_item",
+      "type": "manual",
+      "value": "5055.0",
+      "value_type": "fixed_amount",
+      "allocation_method": "across",
+      "target_selection": "all",
+      "title": "Dept discount",
+      "description": "Dept discount"
+    }
+  ],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 17833150939415,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17833150939415",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 4000,
+      "name": "Makeda - Shadowscale",
+      "price": "21150.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "21150.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "21150.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 10180620517655,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000004225",
+      "taxable": true,
+      "title": "Makeda",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 52165675712791,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Shadowscale",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "2838.24",
+          "price_set": {
+            "shop_money": {
+              "amount": "2838.24",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "2838.24",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": [
+        {
+          "amount": "2543.74",
+          "amount_set": {
+            "shop_money": {
+              "amount": "2543.74",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "2543.74",
+              "currency_code": "PKR"
+            }
+          },
+          "discount_application_index": 0
+        }
+      ]
+    },
+    {
+      "id": 17833150972183,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17833150972183",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 2000,
+      "name": "Gilbert - Marine Blue / L",
+      "price": "4700.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "4700.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "4700.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 10235134509335,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000004616",
+      "taxable": true,
+      "title": "Gilbert",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 52447200379159,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Marine Blue / L",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "630.72",
+          "price_set": {
+            "shop_money": {
+              "amount": "630.72",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "630.72",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": [
+        {
+          "amount": "565.28",
+          "amount_set": {
+            "shop_money": {
+              "amount": "565.28",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "565.28",
+              "currency_code": "PKR"
+            }
+          },
+          "discount_application_index": 0
+        }
+      ]
+    },
+    {
+      "id": 17833151004951,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17833151004951",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 3000,
+      "name": "Cather - Greek Brown / L",
+      "price": "4700.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "4700.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "4700.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 10257447321879,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000004717",
+      "taxable": true,
+      "title": "Cather",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 52563438731543,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Greek Brown / L",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "630.72",
+          "price_set": {
+            "shop_money": {
+              "amount": "630.72",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "630.72",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": [
+        {
+          "amount": "565.27",
+          "amount_set": {
+            "shop_money": {
+              "amount": "565.27",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "565.27",
+              "currency_code": "PKR"
+            }
+          },
+          "discount_application_index": 0
+        }
+      ]
+    },
+    {
+      "id": 17833151037719,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17833151037719",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 5500,
+      "name": "Coco - Noir",
+      "price": "11480.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "11480.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "11480.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 9086617092375,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "1000000002875",
+      "taxable": true,
+      "title": "Coco",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 48098933047575,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Noir",
+      "vendor": "JULKÉ",
+      "tax_lines": [
+        {
+          "channel_liable": false,
+          "price": "1540.57",
+          "price_set": {
+            "shop_money": {
+              "amount": "1540.57",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "1540.57",
+              "currency_code": "PKR"
+            }
+          },
+          "rate": 0.18,
+          "title": "GST"
+        }
+      ],
+      "duties": [],
+      "discount_allocations": [
+        {
+          "amount": "1380.71",
+          "amount_set": {
+            "shop_money": {
+              "amount": "1380.71",
+              "currency_code": "PKR"
+            },
+            "presentment_money": {
+              "amount": "1380.71",
+              "currency_code": "PKR"
+            }
+          },
+          "discount_application_index": 0
+        }
+      ]
+    }
+  ],
+  "payment_terms": {
+    "id": 62690033943,
+    "created_at": "2026-05-07T09:55:58+05:00",
+    "due_in_days": null,
+    "payment_schedules": [],
+    "payment_terms_name": "Due on receipt",
+    "payment_terms_type": "receipt",
+    "updated_at": "2026-05-07T09:55:58+05:00"
+  },
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Leathertex Gloving",
+    "address1": "29th KM ferozepur road",
+    "phone": "+92 320 2958553",
+    "city": "Lahore",
+    "zip": "54000",
+    "province": null,
+    "country": "Pakistan",
+    "last_name": "Private Limited (NTN No.0683679)",
+    "address2": null,
+    "company": "Leathertex",
+    "latitude": 31.5244928,
+    "longitude": 74.3234691,
+    "name": "Leathertex Gloving Private Limited (NTN No.0683679)",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "shipping_lines": []
+}
+ ================ 
+{
+  "id": 7000425791767,
+  "admin_graphql_api_id": "gid://shopify/Order/7000425791767",
+  "app_id": 297017376769,
+  "browser_ip": null,
+  "buyer_accepts_marketing": false,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": null,
+  "checkout_id": null,
+  "checkout_token": null,
+  "client_details": null,
+  "closed_at": null,
+  "company": null,
+  "confirmation_number": "QEA4JYINP",
+  "confirmed": true,
+  "contact_email": "aroojadilch@hotmail.com",
+  "created_at": "2026-05-19T16:23:05+05:00",
+  "currency": "PKR",
+  "current_subtotal_price": "30400.00",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "30400.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "30400.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "0.00",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "30400.00",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "30400.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "30400.00",
+      "currency_code": "PKR"
+    }
+  },
+  "current_total_tax": "0.00",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "customer_locale": null,
+  "device_id": null,
+  "discount_codes": [],
+  "duties_included": false,
+  "email": "aroojadilch@hotmail.com",
+  "estimated_taxes": false,
+  "financial_status": "pending",
+  "fulfillment_status": null,
+  "landing_site": null,
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_business_entity_id": "MTExMjQ4NDYy",
+  "merchant_of_record_app_id": null,
+  "name": "100088136",
+  "note": "Order cancelled through whatsapp",
+  "note_attributes": [
+    {
+      "name": "withretailAI",
+      "value": "yes"
+    },
+    {
+      "name": "source",
+      "value": "whatsapp"
+    }
+  ],
+  "number": 87136,
+  "order_number": 88136,
+  "order_status_url": "https://www.julke.pk/11248462/orders/3ecb0f616d4f9b5a8ec2b36765872ebb/authenticate?key=84a7b0540e87c9a5c460a38e7425cd4e",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": [
+    "COD"
+  ],
+  "phone": "+923250000030",
+  "po_number": null,
+  "presentment_currency": "PKR",
+  "processed_at": "2026-05-19T16:23:05+05:00",
+  "reference": null,
+  "referring_site": null,
+  "source_identifier": null,
+  "source_name": "297017376769",
+  "source_url": null,
+  "subtotal_price": "30400.00",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "30400.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "30400.00",
+      "currency_code": "PKR"
+    }
+  },
+  "tags": "cancelled",
+  "tax_exempt": false,
+  "tax_lines": [],
+  "taxes_included": false,
+  "test": false,
+  "token": "3ecb0f616d4f9b5a8ec2b36765872ebb",
+  "total_cash_rounding_payment_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_cash_rounding_refund_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_discounts": "0.00",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_line_items_price": "30400.00",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "30400.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "30400.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_outstanding": "30400.00",
+  "total_price": "30400.00",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "30400.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "30400.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tax": "0.00",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "PKR"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 7500,
+  "updated_at": "2026-05-19T17:21:27+05:00",
+  "user_id": null,
+  "billing_address": null,
+  "customer": {
+    "id": 9638448660759,
+    "created_at": "2026-05-19T16:23:04+05:00",
+    "updated_at": "2026-05-19T16:23:05+05:00",
+    "first_name": "Arooj",
+    "last_name": "Adil",
+    "state": "disabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "email_marketing_consent": {
+      "state": "not_subscribed",
+      "opt_in_level": "single_opt_in",
+      "consent_updated_at": null
+    },
+    "sms_marketing_consent": null,
+    "tags": "",
+    "email": "aroojadilch@hotmail.com",
+    "phone": null,
+    "currency": "PKR",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/9638448660759",
+    "default_address": {
+      "id": 11634513641751,
+      "customer_id": 9638448660759,
+      "first_name": "Arooj",
+      "last_name": "Adil",
+      "company": null,
+      "address1": "56-DOHS-1, Street 4, Rahwali gate, Gujranwala cantt.",
+      "address2": null,
+      "city": "Gujranwala",
+      "province": null,
+      "country": "Pakistan",
+      "zip": null,
+      "phone": "+923250000030",
+      "name": "Arooj Adil",
+      "province_code": null,
+      "country_code": "PK",
+      "country_name": "Pakistan",
+      "default": true
+    }
+  },
+  "discount_applications": [],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 17878305210647,
+      "admin_graphql_api_id": "gid://shopify/LineItem/17878305210647",
+      "attributed_staffs": [],
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 7500,
+      "name": "Alfie - Black",
+      "price": "30400.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "30400.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "30400.00",
+          "currency_code": "PKR"
+        }
+      },
+      "product_exists": true,
+      "product_id": 8912474407191,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": false,
+      "sku": "1000000000039",
+      "taxable": true,
+      "title": "Alfie",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "variant_id": 47441532584215,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Black",
+      "vendor": "JULKÉ",
+      "tax_lines": [],
+      "duties": [],
+      "discount_allocations": []
+    }
+  ],
+  "payment_terms": null,
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Arooj",
+    "address1": "56-DOHS-1, Street 4, Rahwali gate, Gujranwala cantt.",
+    "phone": "+923250000030",
+    "city": "Gujranwala",
+    "zip": null,
+    "province": "Punjab",
+    "country": "Pakistan",
+    "last_name": "Adil",
+    "address2": null,
+    "company": null,
+    "latitude": 32.2449282,
+    "longitude": 74.1406449,
+    "name": "Arooj Adil",
+    "country_code": "PK",
+    "province_code": null
+  },
+  "shipping_lines": [
+    {
+      "id": 5514260939031,
+      "carrier_identifier": null,
+      "code": "standard(retailai)",
+      "discounted_price": "0.00",
+      "discounted_price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "is_removed": false,
+      "phone": null,
+      "price": "0.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "PKR"
+        }
+      },
+      "requested_fulfillment_service_id": null,
+      "source": null,
+      "title": "standard(retailai)",
+      "tax_lines": [],
+      "discount_allocations": []
+    }
+  ]
+}
+ ================ 
